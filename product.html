@@ -1,0 +1,1634 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, user-scalable=no, viewport-fit=cover" />
+  <title>Карточка товара</title>
+
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+  <link rel="stylesheet" type="text/css" href="fonts/qanelas/qanelas.css" />
+  <link rel="stylesheet" type="text/css" href="fonts/stylesheet.css" />
+
+  <link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/selectric.css" />
+  <link rel="stylesheet" type="text/css" href="css/micromodal.css" />
+  <link rel="stylesheet" type="text/css" href="css/fancybox.css" />
+  <link rel="stylesheet" type="text/css" href="css/aos.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+</head>
+
+<body class="inner-page">
+
+  <div class="siteWrapper">
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <div class="logo-wrapper">
+            <a href="/"></a>
+            <picture class='picture'>
+              <source type="image/webp" srcset="img/logo.webp" />
+              <img src="img/logo.png" alt="" />
+            </picture>
+          </div>
+
+          <nav class="menu">
+            <ul>
+              <li><a href="#" class="menu-link">Главная</a></li>
+              <li>
+                <a href="#" class="menu-link js-action-link" data-open="events-invis">О нас</a>
+              </li>
+              <li><a href="#" class="menu-link js-action-link" data-open="catalog-invis">Каталог</a></li>
+              <li><a href="#" class="menu-link">Производство</a></li>
+              <li>
+                <a href="#" class="menu-link js-action-link" data-open="esg-invis">ESG</a>
+                <ul class="esg-invis sub-menu invis-block">
+                  <li><a href="#">Устойчивое развитие</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="menu-link js-action-link" data-open="contacts-invis">Контакты</a>
+                <ul class="contacts-invis sub-menu invis-block">
+                  <li><a href="#">Дистрибьюторы</a></li>
+                  <li><a href="#">Филиалы и склады</a></li>
+                </ul>
+              </li>
+            </ul>
+
+            <ul class="sub-menu-mobile" data-mobile-open="events-invis">
+              <li><a href="#">Мероприятия</a></li>
+              <li><a href="#">Новости</a></li>
+              <li><a href="#">СМИ о нас</a></li>
+              <li><a href="#">Блог</a></li>
+            </ul>
+
+            <ul class="sub-menu-mobile catalog-invis__list catalog-invis__list--menu-mobile"
+              data-mobile-open="catalog-invis">
+              <li>
+                <a href="#">
+                  <img src="img/pic-cat1.png" alt="">
+                  <span class="text">универсальные контейнеры</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="img/pic-cat2.png" alt="">
+                  <span class="text">круглые
+                    контейнеры</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="img/pic-cat3.png" alt="">
+                  <span class="text">Упаковка для фастфуда</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="img/pic-cat4.png" alt="">
+                  <span class="text">упаковка для
+                    сэндвичей</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="img/pic-cat5.png" alt="">
+                  <span class="text">упаковка для
+                    суши и лапши</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="img/pic-cat6.png" alt="">
+                  <span class="text">кондитерская упаковка</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="img/pic-cat7.png" alt="">
+                  <span class="text">упаковка для
+                    горячих напитков</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="img/pic-cat8.png" alt="">
+                  <span class="text">упаковка для
+                    retail</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="img/pic-cat9.png" alt="">
+                  <span class="text">одноразовые бумажные пакеты</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+
+
+          <div class="header-controls">
+            <div class="search-block">
+              <button class="btn-search">
+                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_1018_7762)">
+                    <mask id="path-1-inside-1_1018_7762" fill="white">
+                      <path
+                        d="M22.3794 23.4994C22.151 23.338 21.895 23.204 21.6986 23.0099C20.2194 21.5465 18.7514 20.0712 17.2812 18.5982C17.2232 18.5402 17.1799 18.4677 17.1327 18.4058C12.5526 22.1958 6.13943 21.1537 2.80568 17.0548C-0.502753 12.9869 -0.219173 7.16176 3.47243 3.47021C7.1646 -0.22134 12.9892 -0.504353 17.0573 2.80347C21.1523 6.1338 22.2011 12.5474 18.4093 17.1285C18.4768 17.182 18.5534 17.2309 18.6169 17.2945C20.0844 18.7591 21.5546 20.222 23.0124 21.6961C23.2066 21.8925 23.3405 22.1485 23.502 22.3764C23.502 22.5114 23.502 22.6459 23.502 22.7809C23.3686 23.127 23.1283 23.3655 22.7829 23.5C22.649 23.4994 22.5145 23.4994 22.3794 23.4994ZM2.3775 10.5951C2.35612 15.0709 5.96501 18.8446 10.5811 18.8801C15.0553 18.915 18.851 15.3027 18.8831 10.6716C18.914 6.20019 15.3074 2.40455 10.6688 2.37585C6.19007 2.34772 2.40788 5.95881 2.3775 10.5951Z" />
+                    </mask>
+                    <path
+                      d="M22.3794 23.4994C22.151 23.338 21.895 23.204 21.6986 23.0099C20.2194 21.5465 18.7514 20.0712 17.2812 18.5982C17.2232 18.5402 17.1799 18.4677 17.1327 18.4058C12.5526 22.1958 6.13943 21.1537 2.80568 17.0548C-0.502753 12.9869 -0.219173 7.16176 3.47243 3.47021C7.1646 -0.22134 12.9892 -0.504353 17.0573 2.80347C21.1523 6.1338 22.2011 12.5474 18.4093 17.1285C18.4768 17.182 18.5534 17.2309 18.6169 17.2945C20.0844 18.7591 21.5546 20.222 23.0124 21.6961C23.2066 21.8925 23.3405 22.1485 23.502 22.3764C23.502 22.5114 23.502 22.6459 23.502 22.7809C23.3686 23.127 23.1283 23.3655 22.7829 23.5C22.649 23.4994 22.5145 23.4994 22.3794 23.4994ZM2.3775 10.5951C2.35612 15.0709 5.96501 18.8446 10.5811 18.8801C15.0553 18.915 18.851 15.3027 18.8831 10.6716C18.914 6.20019 15.3074 2.40455 10.6688 2.37585C6.19007 2.34772 2.40788 5.95881 2.3775 10.5951Z"
+                      fill="#00A19A" stroke="#00A19A" stroke-width="2" mask="url(#path-1-inside-1_1018_7762)" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_1018_7762">
+                      <rect width="24" height="24" fill="white" transform="translate(0.00195312)" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </button>
+
+              <form class="search-invis">
+                <input type="text" placeholder="Поиск по каталогу">
+                <button type="submit">Искать</button>
+              </form>
+            </div>
+            <div class="location-block js-action-link" data-open="location-invis">
+              <button class="btn-location">
+                <svg width="23" height="24" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M11.5 0.5C5.15292 0.5 0 5.65292 0 12C0 18.3471 5.15292 23.5 11.5 23.5C17.8356 23.5 22.9795 18.3655 22.9982 12.034C22.9993 12.0227 22.9999 12.0114 23 12C23 11.9898 22.9995 11.9796 22.9986 11.9694C22.9821 5.63636 17.837 0.5 11.5 0.5ZM11.5 1.19C12.665 1.19 13.7857 1.3763 14.8368 1.7167C14.9123 1.79214 14.985 1.87264 15.0524 1.96142C15.675 1.69761 15.8206 2.93616 15.1952 2.41544C14.4327 2.35886 14.3844 1.33536 13.7604 1.82204C14.0889 2.01754 13.3303 2.62014 14.1705 2.55873C14.4698 1.88253 14.3081 3.05921 14.9999 2.78183C14.5712 2.91477 14.9086 3.12315 15.2 3.20963C16.1759 3.85225 14.9217 3.49253 14.4976 3.69654C14.7 4.26372 14.7975 4.86724 15.4307 5.0241C14.9932 5.43051 15.1761 6.21941 14.5843 6.48805L14.3313 6.72173C14.2927 7.10813 13.363 8.02813 14.0272 8.03963C13.6379 8.1406 14.0203 8.62475 14.0484 8.97412C13.7075 9.62433 13.8242 10.6582 14.5937 10.925C15.0434 11.5934 15.8468 12.5617 16.7842 12.195C17.6019 12.6201 18.4676 11.0736 18.9467 12.1065C19.8111 12.0681 19.702 12.7898 19.5567 13.4824C20.0749 14.2374 20.2828 15.3649 19.72 16.174C19.1953 17.3008 19.5201 18.6323 18.8595 19.7234C18.9276 19.7358 18.995 19.7338 19.0617 19.7248C17.1127 21.6324 14.4456 22.81 11.5 22.81C9.54766 22.8129 7.63129 22.2848 5.95608 21.2821C5.92848 21.0183 6.32408 20.7941 6.25968 20.5675C6.49474 20.5542 7.24178 19.682 7.07779 19.0559C7.81954 18.7098 8.78531 18.6787 8.65904 17.5331C8.33704 16.482 9.71888 16.0814 9.54684 15.0852C9.15906 14.2696 8.01803 14.0341 7.19785 13.7981C6.68863 13.3294 5.8466 13.4009 5.68537 12.5152C5.58141 11.4827 4.16346 11.7941 3.87366 10.8746C4.03259 10.0517 3.82789 10.5947 3.32695 10.3341C3.14525 10.2895 3.25795 10.5742 2.76345 10.4376C2.92376 10.014 2.45893 9.89251 2.39315 10.0813C1.96742 9.90424 1.33952 11.2463 1.10009 10.3757C1.35677 9.74278 1.08491 9.27404 1.16564 8.81818C1.19002 8.73883 1.21785 8.66086 1.24384 8.58243C1.39334 8.34162 1.43773 8.17671 1.4191 8.0946C1.62817 7.55456 1.8791 7.03614 2.16844 6.54233C2.23491 6.66745 2.16568 6.96691 2.04654 7.32939C2.14498 7.51109 2.65604 6.63502 2.21904 7.61965C2.63396 7.02625 2.28689 7.91405 2.52908 7.9198C2.82578 8.49273 1.6767 7.08835 1.54537 8.00858C2.04194 7.90347 1.81677 8.6558 2.39085 8.5132C1.91199 9.16042 3.05394 8.79702 3.43045 8.92053C3.94266 8.58565 2.91755 8.83911 2.94561 8.44121C2.32093 8.34944 2.83705 8.05872 2.77265 7.90623C2.44191 7.73741 2.84763 6.79027 2.40741 6.91746C2.67651 5.78977 3.79017 5.20235 4.52364 4.39965C5.2394 3.74139 5.74839 3.91688 6.58053 3.38857C6.21092 3.28162 6.24496 3.06312 6.75257 2.90603C7.70569 2.55643 6.50026 3.09601 6.8977 3.24528C7.83817 3.56038 7.43015 2.80069 7.76618 2.46903C7.62726 2.35058 7.74525 2.02306 7.71489 1.87149C8.1895 1.69488 8.67602 1.55208 9.17079 1.44415C9.16228 1.65874 9.33409 1.84849 9.68346 1.69094C10.0436 1.44254 10.4563 1.30753 10.876 1.20886C11.0838 1.19666 11.2919 1.19037 11.5 1.19ZM16.9144 3.7637C16.9341 3.7614 16.9539 3.76218 16.9733 3.766C17.2875 3.83086 17.1856 4.73821 17.6548 4.5319C17.1488 3.91251 17.5074 4.02176 17.9961 4.3755C18.7696 4.6285 17.7015 4.63448 18.2229 4.91094C18.7956 5.8291 18.3423 4.01808 18.9463 4.83964C19.3147 5.44914 19.711 5.30056 20.091 5.43764C20.2509 5.64707 20.4031 5.86226 20.5473 6.08279C20.2609 6.05059 19.3152 5.4036 19.5254 5.97929C19.4361 6.1465 18.3234 5.51699 18.15 5.1184C17.6534 4.32421 16.456 5.19384 15.7394 5.0264C16.4583 5.07976 16.232 4.01624 16.6773 3.87939C16.7739 3.80556 16.8512 3.7706 16.9144 3.7637ZM13.5771 6.36914C13.0329 6.43331 13.6733 6.70333 14.1107 6.66193L14.1068 6.38202C13.9461 6.41859 13.766 6.45539 13.5771 6.36914ZM3.84974 8.77862C3.83939 8.77586 3.82881 8.77862 3.81846 8.78805C3.59306 8.93456 4.03834 9.88124 3.67632 10.3297C4.14644 10.1421 4.00568 8.82094 3.84974 8.77862ZM0.83513 10.2382C0.874 10.6343 0.93587 11.0563 1.13643 11.2003C1.45682 10.6869 1.41197 11.7946 1.30939 12.1536C0.91264 13.0092 1.08744 14.0622 1.48695 14.8948C1.72822 15.8359 2.41799 16.5225 2.9693 17.2739C3.29843 18.1548 3.6156 19.0815 4.11079 19.8897C2.00629 17.9179 0.69 15.1147 0.69 12C0.69 11.3997 0.74152 10.8116 0.83513 10.2382Z" />
+                </svg>
+              </button>
+
+              <div class="location-invis invis-block">
+                <ul>
+                  <li>
+                    <a href="#">
+                      <img src="img/rus.png" alt="">
+                      RU
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="img/en.png" alt="">
+                      EN
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="city-block">
+            <span class="city-block__title">Ваш город:</span>
+            <div class="city-block__city js-action-link" data-open="city-invis">
+              <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M9.91675 13.8678L9.91667 13.868C9.78354 14.2159 9.48147 14.3884 9.18658 14.3951C8.89677 14.4016 8.65044 14.2529 8.5593 13.9536L7.15411 9.32958C7.1541 9.32955 7.15409 9.32952 7.15408 9.32949C6.99678 8.81042 6.59533 8.40934 6.07644 8.25161L6.0764 8.25159L1.45168 6.8462C1.45168 6.8462 1.45167 6.8462 1.45167 6.8462C1.15253 6.75529 1.00424 6.50945 1.01096 6.21979C1.01781 5.92476 1.19063 5.6225 1.53823 5.48938L1.53828 5.48936L13.7303 0.818667L13.7304 0.818606C14.3038 0.59873 14.8079 1.10282 14.588 1.67617L14.588 1.67631L9.91675 13.8678Z"
+                  fill="#00A19A" stroke="#00A19A" />
+              </svg>
+
+              <span class="city">Москва</span>
+            </div>
+
+            <div class="city-invis invis-block">
+              <ul>
+                <li><a href="#">Москва</a></li>
+                <li><a href="#" class="active">Санкт-Петербург</a></li>
+                <li><a href="#">Краснодар</a></li>
+                <li><a href="#">Екатеринбург</a></li>
+                <li><a href="#">Казань</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="header-info">
+            <a href="#" class="link-phone">+ 7 (495) 773-87-18</a>
+            <a href="#" class="link-mail">clients@osqgroup.ru</a>
+          </div>
+
+          <a href="#" class="btn" data-modal="modal-call">
+            Заказать звонок
+
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3.33333 1H15M15 1V12.6667M15 1L1 15" stroke-width="1.2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+
+          </a>
+
+          <button class="burger">
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+          </button>
+
+          <div class="catalog-invis invis-block">
+            <div class="catalog-invis__inner">
+              <div class="leftSide">
+                <ul class="catalog-invis__list">
+                  <li>
+                    <a href="#">
+                      <img src="img/pic-cat1.png" alt="">
+                      <span class="text">универсальные контейнеры</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="img/pic-cat2.png" alt="">
+                      <span class="text">круглые
+                        контейнеры</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="img/pic-cat3.png" alt="">
+                      <span class="text">Упаковка для фастфуда</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="img/pic-cat4.png" alt="">
+                      <span class="text">упаковка для
+                        сэндвичей</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="img/pic-cat5.png" alt="">
+                      <span class="text">упаковка для
+                        суши и лапши</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="img/pic-cat6.png" alt="">
+                      <span class="text">кондитерская упаковка</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="img/pic-cat7.png" alt="">
+                      <span class="text">упаковка для
+                        горячих напитков</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="img/pic-cat8.png" alt="">
+                      <span class="text">упаковка для
+                        retail</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="img/pic-cat9.png" alt="">
+                      <span class="text">одноразовые бумажные пакеты</span>
+                    </a>
+                  </li>
+                </ul>
+
+                <ul class="catalog-invis__eat">
+                  <li><a href="#">Готовые блюда и салаты</a></li>
+                  <li><a href="#">Бургеры, хот-доги, пицца и снеки</a></li>
+                  <li><a href="#">Сендвичи и багеты</a></li>
+                  <li><a href="#">Ягоды и фрукты</a></li>
+                  <li>
+                    <a href="#" class="catalog-invis__eatMore">
+
+                      Показать еще
+
+                      <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 10L5 5M5 5L0 5M5 5L5 0M5 5L10 5" stroke-width="2" />
+                      </svg>
+
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="rightSide">
+                <div class="swiper catalog-invis__slider">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="event-small">
+                        <a href="#"></a>
+                        <picture class='picture'>
+                          <img src="img/pic-small-catalog.png" alt="" />
+                        </picture>
+                        <span class="date">КАТАЛОГ 2023</span>
+                        <h2 class="caption caption--small">Скачать</h2>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="event-small">
+                        <a href="#"></a>
+                        <picture class='picture'>
+                          <img src="img/pic-small-catalog.png" alt="" />
+                        </picture>
+                        <span class="date">КАТАЛОГ 2023</span>
+                        <h2 class="caption caption--small">Скачать</h2>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="event-small">
+                        <a href="#"></a>
+                        <picture class='picture'>
+                          <img src="img/pic-small-catalog.png" alt="" />
+                        </picture>
+                        <span class="date">КАТАЛОГ 2023</span>
+                        <h2 class="caption caption--small">Скачать</h2>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="events-invis invis-block">
+            <div class="tabs">
+              <ul class="list-tabs">
+                <li><a href="#tab1">Мероприятия</a></li>
+                <li><a href="#tab2">новости</a></li>
+                <li><a href="#tab3">СМИ о нас</a></li>
+                <li><a href="#tab4">блог</a></li>
+                <li><a href="#tab4">О компании</a></li>
+              </ul>
+              <div class="tabs-body" id="tab1">
+                <div class="eventList-small swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="event-small">
+                        <a href="#"></a>
+                        <picture class='picture'>
+                          <source type="image/webp" srcset="img/pic-grettings1.webp" />
+                          <img src="img/pic-grettings1.jpg" alt="grettings" />
+                        </picture>
+                        <span class="date">12 января 2023, 18:00</span>
+                        <h2 class="caption caption--small">Retail business russia</h2>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="event-small">
+                        <a href="#"></a>
+                        <picture class='picture'>
+                          <img src="img/pic-small1.jpg" alt="grettings" />
+                        </picture>
+                        <span class="date">12 января 2023, 18:00</span>
+                        <h2 class="caption caption--small">Retail business russia</h2>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="event-small">
+                        <a href="#"></a>
+                        <picture class='picture'>
+                          <img src="img/pic-small2.jpg" alt="grettings" />
+                        </picture>
+                        <span class="date">12 января 2023, 18:00</span>
+                        <h2 class="caption caption--small">Retail business russia</h2>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="event-small">
+                        <a href="#"></a>
+                        <picture class='picture'>
+                          <source type="image/webp" srcset="img/pic-grettings1.webp" />
+                          <img src="img/pic-grettings1.jpg" alt="grettings" />
+                        </picture>
+                        <span class="date">12 января 2023, 18:00</span>
+                        <h2 class="caption caption--small">Retail business russia</h2>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="event-small">
+                        <a href="#"></a>
+                        <picture class='picture'>
+                          <source type="image/webp" srcset="img/pic-grettings1.webp" />
+                          <img src="img/pic-grettings1.jpg" alt="grettings" />
+                        </picture>
+                        <span class="date">12 января 2023, 18:00</span>
+                        <h2 class="caption caption--small">Retail business russia</h2>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="event-small">
+                        <a href="#"></a>
+                        <picture class='picture'>
+                          <img src="img/pic-small1.jpg" alt="grettings" />
+                        </picture>
+                        <span class="date">12 января 2023, 18:00</span>
+                        <h2 class="caption caption--small">Retail business russia</h2>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="event-small">
+                        <a href="#"></a>
+                        <picture class='picture'>
+                          <img src="img/pic-small2.jpg" alt="grettings" />
+                        </picture>
+                        <span class="date">12 января 2023, 18:00</span>
+                        <h2 class="caption caption--small">Retail business russia</h2>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="event-small">
+                        <a href="#"></a>
+                        <picture class='picture'>
+                          <source type="image/webp" srcset="img/pic-grettings1.webp" />
+                          <img src="img/pic-grettings1.jpg" alt="grettings" />
+                        </picture>
+                        <span class="date">12 января 2023, 18:00</span>
+                        <h2 class="caption caption--small">Retail business russia</h2>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tabs-body" id="tab2">
+                <div class="events-news eventList-small swiper">
+                  <div class="swiper-wrapper">
+                    <div class="news-item swiper-slide">
+                      <picture class="picture news-item__picture">
+                        <source type="image/webp" srcset="img/pic-new-item1.webp">
+                        <img src="/img/pic-new-item1.jpg" alt="">
+                      </picture>
+                      <div class="news-item__content">
+                        <span class="news-item__date">Сентября 12, 2023</span>
+                        <a href="#" class="news-item__name">Original Superior Quality Original Superior</a>
+                        <a href="#" class="btn btn--border-green">Читать полностью</a>
+                      </div>
+                    </div>
+                    <div class="news-item swiper-slide">
+                      <picture class="picture news-item__picture">
+                        <source type="image/webp" srcset="img/pic-new-item1.webp">
+                        <img src="/img/pic-new-item1.jpg" alt="">
+                      </picture>
+                      <div class="news-item__content">
+                        <span class="news-item__date">Сентября 12, 2023</span>
+                        <a href="#" class="news-item__name">Original Superior Quality Original Superior</a>
+                        <a href="#" class="btn btn--border-green">Читать полностью</a>
+                      </div>
+                    </div>
+                    <div class="news-item swiper-slide">
+                      <picture class="picture news-item__picture">
+                        <source type="image/webp" srcset="img/pic-new-item1.webp">
+                        <img src="/img/pic-new-item1.jpg" alt="">
+                      </picture>
+                      <div class="news-item__content">
+                        <span class="news-item__date">Сентября 12, 2023</span>
+                        <a href="#" class="news-item__name">Original Superior Quality Original Superior</a>
+                        <a href="#" class="btn btn--border-green">Читать полностью</a>
+                      </div>
+                    </div>
+                    <div class="news-item swiper-slide">
+                      <picture class="picture news-item__picture">
+                        <source type="image/webp" srcset="img/pic-new-item1.webp">
+                        <img src="/img/pic-new-item1.jpg" alt="">
+                      </picture>
+                      <div class="news-item__content">
+                        <span class="news-item__date">Сентября 12, 2023</span>
+                        <a href="#" class="news-item__name">Original Superior Quality Original Superior</a>
+                        <a href="#" class="btn btn--border-green">Читать полностью</a>
+                      </div>
+                    </div>
+
+                    <div class="news-item swiper-slide">
+                      <picture class="picture news-item__picture">
+                        <source type="image/webp" srcset="img/pic-new-item1.webp">
+                        <img src="/img/pic-new-item1.jpg" alt="">
+                      </picture>
+                      <div class="news-item__content">
+                        <span class="news-item__date">Сентября 12, 2023</span>
+                        <a href="#" class="news-item__name">Original Superior Quality Original Superior</a>
+                        <a href="#" class="btn btn--border-green">Читать полностью</a>
+                      </div>
+                    </div>
+                    <div class="news-item swiper-slide">
+                      <picture class="picture news-item__picture">
+                        <source type="image/webp" srcset="img/pic-new-item1.webp">
+                        <img src="/img/pic-new-item1.jpg" alt="">
+                      </picture>
+                      <div class="news-item__content">
+                        <span class="news-item__date">Сентября 12, 2023</span>
+                        <a href="#" class="news-item__name">Original Superior Quality Original Superior</a>
+                        <a href="#" class="btn btn--border-green">Читать полностью</a>
+                      </div>
+                    </div>
+                    <div class="news-item swiper-slide">
+                      <picture class="picture news-item__picture">
+                        <source type="image/webp" srcset="img/pic-new-item1.webp">
+                        <img src="/img/pic-new-item1.jpg" alt="">
+                      </picture>
+                      <div class="news-item__content">
+                        <span class="news-item__date">Сентября 12, 2023</span>
+                        <a href="#" class="news-item__name">Original Superior Quality Original Superior</a>
+                        <a href="#" class="btn btn--border-green">Читать полностью</a>
+                      </div>
+                    </div>
+                    <div class="news-item swiper-slide">
+                      <picture class="picture news-item__picture">
+                        <source type="image/webp" srcset="img/pic-new-item1.webp">
+                        <img src="/img/pic-new-item1.jpg" alt="">
+                      </picture>
+                      <div class="news-item__content">
+                        <span class="news-item__date">Сентября 12, 2023</span>
+                        <a href="#" class="news-item__name">Original Superior Quality Original Superior</a>
+                        <a href="#" class="btn btn--border-green">Читать полностью</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tabs-body" id="tab3">
+                <div class="eventList-small swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="event-small">
+                        <a href="#"></a>
+                        <picture class='picture'>
+                          <source type="image/webp" srcset="img/pic-grettings1.webp" />
+                          <img src="img/pic-grettings1.jpg" alt="grettings" />
+                        </picture>
+                        <span class="date">12 января 2023, 18:00</span>
+                        <h2 class="caption caption--small">Retail business russia</h2>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="event-small">
+                        <a href="#"></a>
+                        <picture class='picture'>
+                          <img src="img/pic-small1.jpg" alt="grettings" />
+                        </picture>
+                        <span class="date">12 января 2023, 18:00</span>
+                        <h2 class="caption caption--small">Retail business russia</h2>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="event-small">
+                        <a href="#"></a>
+                        <picture class='picture'>
+                          <img src="img/pic-small2.jpg" alt="grettings" />
+                        </picture>
+                        <span class="date">12 января 2023, 18:00</span>
+                        <h2 class="caption caption--small">Retail business russia</h2>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="event-small">
+                        <a href="#"></a>
+                        <picture class='picture'>
+                          <source type="image/webp" srcset="img/pic-grettings1.webp" />
+                          <img src="img/pic-grettings1.jpg" alt="grettings" />
+                        </picture>
+                        <span class="date">12 января 2023, 18:00</span>
+                        <h2 class="caption caption--small">Retail business russia</h2>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="event-small">
+                        <a href="#"></a>
+                        <picture class='picture'>
+                          <source type="image/webp" srcset="img/pic-grettings1.webp" />
+                          <img src="img/pic-grettings1.jpg" alt="grettings" />
+                        </picture>
+                        <span class="date">12 января 2023, 18:00</span>
+                        <h2 class="caption caption--small">Retail business russia</h2>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="event-small">
+                        <a href="#"></a>
+                        <picture class='picture'>
+                          <img src="img/pic-small1.jpg" alt="grettings" />
+                        </picture>
+                        <span class="date">12 января 2023, 18:00</span>
+                        <h2 class="caption caption--small">Retail business russia</h2>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="event-small">
+                        <a href="#"></a>
+                        <picture class='picture'>
+                          <img src="img/pic-small2.jpg" alt="grettings" />
+                        </picture>
+                        <span class="date">12 января 2023, 18:00</span>
+                        <h2 class="caption caption--small">Retail business russia</h2>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="event-small">
+                        <a href="#"></a>
+                        <picture class='picture'>
+                          <source type="image/webp" srcset="img/pic-grettings1.webp" />
+                          <img src="img/pic-grettings1.jpg" alt="grettings" />
+                        </picture>
+                        <span class="date">12 января 2023, 18:00</span>
+                        <h2 class="caption caption--small">Retail business russia</h2>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tabs-body" id="tab4">
+                <div class="eventList-small swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="event-small">
+                        <a href="#"></a>
+                        <picture class='picture'>
+                          <source type="image/webp" srcset="img/pic-grettings1.webp" />
+                          <img src="img/pic-grettings1.jpg" alt="grettings" />
+                        </picture>
+                        <span class="date">12 января 2023, 18:00</span>
+                        <h2 class="caption caption--small">Retail business russia</h2>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="event-small">
+                        <a href="#"></a>
+                        <picture class='picture'>
+                          <img src="img/pic-small1.jpg" alt="grettings" />
+                        </picture>
+                        <span class="date">12 января 2023, 18:00</span>
+                        <h2 class="caption caption--small">Retail business russia</h2>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="event-small">
+                        <a href="#"></a>
+                        <picture class='picture'>
+                          <img src="img/pic-small2.jpg" alt="grettings" />
+                        </picture>
+                        <span class="date">12 января 2023, 18:00</span>
+                        <h2 class="caption caption--small">Retail business russia</h2>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="event-small">
+                        <a href="#"></a>
+                        <picture class='picture'>
+                          <source type="image/webp" srcset="img/pic-grettings1.webp" />
+                          <img src="img/pic-grettings1.jpg" alt="grettings" />
+                        </picture>
+                        <span class="date">12 января 2023, 18:00</span>
+                        <h2 class="caption caption--small">Retail business russia</h2>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="event-small">
+                        <a href="#"></a>
+                        <picture class='picture'>
+                          <source type="image/webp" srcset="img/pic-grettings1.webp" />
+                          <img src="img/pic-grettings1.jpg" alt="grettings" />
+                        </picture>
+                        <span class="date">12 января 2023, 18:00</span>
+                        <h2 class="caption caption--small">Retail business russia</h2>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="event-small">
+                        <a href="#"></a>
+                        <picture class='picture'>
+                          <img src="img/pic-small1.jpg" alt="grettings" />
+                        </picture>
+                        <span class="date">12 января 2023, 18:00</span>
+                        <h2 class="caption caption--small">Retail business russia</h2>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="event-small">
+                        <a href="#"></a>
+                        <picture class='picture'>
+                          <img src="img/pic-small2.jpg" alt="grettings" />
+                        </picture>
+                        <span class="date">12 января 2023, 18:00</span>
+                        <h2 class="caption caption--small">Retail business russia</h2>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="event-small">
+                        <a href="#"></a>
+                        <picture class='picture'>
+                          <source type="image/webp" srcset="img/pic-grettings1.webp" />
+                          <img src="img/pic-grettings1.jpg" alt="grettings" />
+                        </picture>
+                        <span class="date">12 января 2023, 18:00</span>
+                        <h2 class="caption caption--small">Retail business russia</h2>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="breadcrumbs">
+        <div class="container">
+          <ul class="breadcrumbs__list">
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Каталог</a></li>
+            <li><span>КОНТЕЙНЕРЫ НАВЫНОС</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="product">
+        <div class="container">
+          <a href="#" class="btn-back">
+
+            <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path opacity="0.6" d="M7 11L2 6L7 1" stroke="#AA9F8E" stroke-width="2"></path>
+            </svg>
+
+            Назад к списку</a>
+
+          <div class="product__inner">
+            <div class="product__column">
+              <a href="#" class="product__back">
+
+                <svg width="7" height="10" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path opacity="0.6" d="M5.90625 9L2.00225 5L5.90625 1" stroke="#AA9F8E" stroke-width="2"
+                    stroke-linecap="round" />
+                </svg>
+
+                Назад
+              </a>
+              <div class="product__name">
+                <h2 class="caption">OSQ TABOX PRO 1555</h2>
+                <button class="btn-favorite favorite">
+                  <svg width="26" height="23" viewBox="0 0 26 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M11.978 21.7172L11.9777 21.7169C10.9558 20.8234 9.97099 19.984 9.10417 19.2453C9.10353 19.2448 9.10289 19.2443 9.10226 19.2437L9.10166 19.2432L9.10168 19.2431L9.09784 19.2399C6.54321 17.0629 4.3852 15.2216 2.89078 13.4185C1.23753 11.4235 0.501953 9.57826 0.501953 7.58688C0.501953 5.62601 1.17383 3.83688 2.37225 2.53693C3.58321 1.22352 5.2425 0.5 7.05435 0.5C8.3986 0.5 9.62602 0.922557 10.7149 1.76474C11.2671 2.19186 11.7717 2.71775 12.2193 3.33672L12.6244 3.89688L13.0296 3.3368C13.4774 2.7177 13.9819 2.19182 14.5341 1.76476L14.5342 1.76474C15.6231 0.922557 16.8505 0.5 18.1948 0.5C20.0064 0.5 21.6659 1.22352 22.8769 2.53693C24.0753 3.83685 24.747 5.62599 24.747 7.58688C24.747 9.57829 24.0116 11.4235 22.3583 13.4183L22.3583 13.4183C20.8639 15.2216 18.7061 17.0627 16.1518 19.2395C15.283 19.9797 14.2959 20.821 13.271 21.7173L13.2709 21.7174C13.0924 21.8736 12.8627 21.96 12.6245 21.96C12.3861 21.96 12.1567 21.8737 11.978 21.7172Z"
+                      stroke="#AA9F8E" />
+                  </svg>
+                </button>
+              </div>
+              <span class="product__desc">
+                <p>OSQ Group – один из крупнейших в России производителей технологичной упаковки для пищевой
+                  промышленности. </p>
+              </span>
+              <ul class="product__icons">
+                <li data-title="Экологично">
+                  <svg width="35" height="34" viewBox="0 0 35 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M6.97714 24.0253H14.0688C14.2255 24.0253 14.3759 24.0875 14.4867 24.1984C14.5975 24.3092 14.6598 24.4595 14.6598 24.6162V31.637C14.6598 31.7937 14.5975 31.944 14.4867 32.0549C14.3759 32.1657 14.2255 32.228 14.0688 32.228H8.4073C7.8011 32.2273 7.2052 32.0712 6.67651 31.7746C6.14782 31.478 5.70399 31.0508 5.38742 30.5338L3.4707 27.3249L6.97714 24.0253Z"
+                      fill="#AA9F8E" />
+                    <path
+                      d="M27.0227 24.0265L23.4985 17.5081C23.4525 17.4213 23.4241 17.3263 23.4152 17.2284C23.4062 17.1306 23.4168 17.032 23.4463 16.9384C23.4759 16.8447 23.5237 16.7578 23.5871 16.6828C23.6505 16.6078 23.7282 16.5461 23.8156 16.5014L29.8239 13.4599C29.9949 13.3706 30.1943 13.3524 30.3787 13.4092C30.5631 13.466 30.7177 13.5932 30.8088 13.7633L33.5884 18.9028C33.873 19.4323 34.0155 20.0266 34.0021 20.6277C33.9886 21.2288 33.8196 21.8161 33.5115 22.3324L31.9356 24.9799L27.0227 24.0265Z"
+                      fill="#AA9F8E" />
+                    <path
+                      d="M16.7178 4.69405L12.9178 11.0588C12.8678 11.1426 12.8014 11.2155 12.7227 11.2732C12.644 11.3308 12.5544 11.3721 12.4595 11.3945C12.3645 11.4169 12.266 11.42 12.1698 11.4036C12.0735 11.3873 11.9816 11.3517 11.8994 11.2992L6.20241 7.70013C6.04061 7.59779 5.92528 7.4362 5.88111 7.24991C5.83693 7.06363 5.86741 6.86746 5.96602 6.70336L8.95634 1.69388C9.26491 1.1776 9.70205 0.750137 10.2251 0.453216C10.7482 0.156295 11.3393 5.87407e-05 11.9408 -0.000244141H14.7459L16.7178 4.69405Z"
+                      fill="#AA9F8E" />
+                    <path
+                      d="M11.0833 19.62C11.1316 19.7343 11.144 19.8606 11.1187 19.982C11.0935 20.1035 11.0318 20.2144 10.942 20.3C10.8522 20.3855 10.7384 20.4417 10.6158 20.461C10.4933 20.4803 10.3678 20.4618 10.256 20.408L9.21981 19.8485L5.31151 27.1057C5.03047 27.6366 4.88983 28.2306 4.90293 28.8312C4.91603 29.4318 5.08244 30.0191 5.38636 30.5373L0.500989 22.3562C0.186722 21.8335 0.0143295 21.2378 0.000855394 20.628C-0.0126187 20.0182 0.133292 19.4155 0.424162 18.8793L2.00009 15.954L0.967856 15.3965C0.854272 15.3394 0.762135 15.2472 0.705125 15.1336C0.648114 15.0199 0.62927 14.8909 0.651389 14.7657C0.673509 14.6405 0.735412 14.5258 0.82791 14.4386C0.920408 14.3514 1.03857 14.2963 1.16485 14.2816L7.74041 13.1962C7.86634 13.1752 7.99566 13.1967 8.108 13.2574C8.22034 13.318 8.30932 13.4143 8.36093 13.531L11.0833 19.62Z"
+                      fill="#AA9F8E" />
+                    <path
+                      d="M19.1788 8.82692L16.7164 4.69011L14.9317 1.69388C14.6203 1.18061 14.1828 0.755516 13.6607 0.458997C13.1387 0.162478 12.5496 0.00438884 11.9492 -0.00024356H21.4737C22.0837 -0.000593831 22.6833 0.157546 23.2137 0.458677C23.7441 0.759807 24.1872 1.19359 24.4995 1.71752L26.233 4.63101L27.2416 4.02625C27.3506 3.9655 27.4757 3.93994 27.5997 3.95306C27.7238 3.96617 27.8407 4.01734 27.9346 4.09953C28.0284 4.18172 28.0946 4.29093 28.1239 4.41217C28.1533 4.53342 28.1444 4.66077 28.0985 4.77679L25.6539 10.9722C25.6082 11.0917 25.5239 11.1925 25.4143 11.2585C25.3047 11.3246 25.1761 11.352 25.0491 11.3366L18.4322 10.5486C18.3084 10.5332 18.1924 10.48 18.0999 10.3962C18.0075 10.3125 17.9431 10.2023 17.9155 10.0806C17.888 9.95895 17.8986 9.83175 17.9459 9.71634C17.9932 9.60092 18.075 9.5029 18.18 9.43562L19.1788 8.82692Z"
+                      fill="#AA9F8E" />
+                    <path
+                      d="M33.5062 22.3329L28.6228 30.5159C28.3113 31.0397 27.8685 31.4731 27.3382 31.7733C26.8079 32.0735 26.2084 32.2302 25.599 32.2278H22.2738V33.4097C22.2716 33.5347 22.2306 33.6558 22.1564 33.7563C22.0821 33.8568 21.9784 33.9317 21.8596 33.9705C21.7408 34.0093 21.6129 34.0101 21.4937 33.9728C21.3744 33.9355 21.2698 33.8619 21.1943 33.7624L17.1205 28.485C17.0424 28.3844 17 28.2607 17 28.1333C17 28.006 17.0424 27.8823 17.1205 27.7817L21.1904 22.5063C21.2671 22.4074 21.3724 22.3345 21.492 22.2976C21.6116 22.2608 21.7397 22.2617 21.8588 22.3002C21.9779 22.3388 22.0822 22.4131 22.1575 22.5131C22.2328 22.613 22.2755 22.7338 22.2797 22.8589V24.0409H30.5297C31.1304 24.034 31.7193 23.8734 32.2403 23.5744C32.7614 23.2755 33.1972 22.8481 33.5062 22.3329Z"
+                      fill="#AA9F8E" />
+                  </svg>
+                </li>
+                <li data-title="Экологично">
+                  <svg width="33" height="22" viewBox="0 0 33 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M30.0913 -0.000366211H2.90873C2.13758 0.000334403 1.39821 0.306954 0.852877 0.852199C0.307549 1.39744 0.00081757 2.13677 0 2.90792V18.5464C0.00081757 19.3176 0.307549 20.0569 0.852877 20.6021C1.39821 21.1474 2.13758 21.454 2.90873 21.4547H30.0913C30.8624 21.454 31.6018 21.1474 32.1471 20.6021C32.6925 20.0569 32.9992 19.3176 33 18.5464V2.90792C32.9992 2.13677 32.6925 1.39744 32.1471 0.852199C31.6018 0.306954 30.8624 0.000334403 30.0913 -0.000366211ZM23.2204 16.3408C23.22 16.697 23.0782 17.0385 22.8263 17.2903C22.5744 17.5421 22.233 17.6837 21.8768 17.684H4.26384C3.90736 17.6842 3.56542 17.5427 3.31314 17.2909C3.06087 17.039 2.9189 16.6973 2.91843 16.3408V5.11351C2.9189 4.75734 3.06063 4.41589 3.31252 4.16408C3.56441 3.91227 3.9059 3.77066 4.26208 3.77031H21.8768C22.233 3.77066 22.5744 3.91227 22.8263 4.16408C23.0782 4.41589 23.22 4.75734 23.2204 5.11351V16.3408ZM27.6757 18.2037C27.2973 18.2037 26.9274 18.0915 26.6128 17.8813C26.2982 17.671 26.053 17.3722 25.9082 17.0227C25.7634 16.6731 25.7255 16.2884 25.7993 15.9173C25.8732 15.5462 26.0554 15.2053 26.3229 14.9378C26.5905 14.6702 26.9314 14.488 27.3025 14.4142C27.6736 14.3404 28.0583 14.3782 28.4078 14.523C28.7574 14.6678 29.0562 14.9131 29.2664 15.2277C29.4766 15.5423 29.5888 15.9122 29.5888 16.2905C29.5889 16.5417 29.5395 16.7905 29.4434 17.0225C29.3473 17.2546 29.2065 17.4655 29.0289 17.6431C28.8514 17.8208 28.6406 17.9617 28.4085 18.0579C28.1765 18.1541 27.9278 18.2036 27.6766 18.2037H27.6757ZM27.6757 12.6046C27.2973 12.6046 26.9274 12.4924 26.6128 12.2821C26.2982 12.0719 26.053 11.7731 25.9082 11.4236C25.7634 11.074 25.7255 10.6893 25.7993 10.3182C25.8732 9.9471 26.0554 9.60621 26.3229 9.33865C26.5905 9.0711 26.9314 8.88889 27.3025 8.81507C27.6736 8.74125 28.0583 8.77914 28.4078 8.92394C28.7574 9.06874 29.0562 9.31395 29.2664 9.62856C29.4766 9.94318 29.5888 10.3131 29.5888 10.6914C29.5889 10.9426 29.5395 11.1913 29.4434 11.4234C29.3473 11.6555 29.2065 11.8664 29.0289 12.044C28.8514 12.2217 28.6406 12.3626 28.4085 12.4588C28.1765 12.555 27.9278 12.6045 27.6766 12.6046H27.6757ZM30.1266 5.71431C30.1266 5.76449 30.1168 5.81419 30.0976 5.86057C30.0784 5.90694 30.0503 5.94908 30.0148 5.98456C29.9793 6.02005 29.9372 6.04818 29.8908 6.06736C29.8444 6.08653 29.7947 6.09638 29.7446 6.09632H25.6069C25.5056 6.09632 25.4084 6.05607 25.3368 5.98443C25.2651 5.91279 25.2249 5.81563 25.2249 5.71431V4.106C25.2249 4.05583 25.2347 4.00616 25.2539 3.95981C25.2731 3.91346 25.3013 3.87135 25.3368 3.83588C25.3722 3.8004 25.4143 3.77227 25.4607 3.75307C25.507 3.73387 25.5567 3.72399 25.6069 3.72399H29.7446C29.7947 3.72399 29.8444 3.73387 29.8907 3.75307C29.9371 3.77227 29.9792 3.8004 30.0147 3.83588C30.0501 3.87135 30.0783 3.91346 30.0975 3.95981C30.1167 4.00616 30.1266 4.05583 30.1266 4.106V5.71431Z"
+                      fill="#AA9F8E" />
+                    <path
+                      d="M21.8771 4.92163H4.26415C4.2133 4.92175 4.16456 4.942 4.1286 4.97796C4.09264 5.01392 4.07238 5.06266 4.07227 5.11352V16.3408C4.07238 16.3917 4.09264 16.4404 4.1286 16.4764C4.16456 16.5124 4.2133 16.5326 4.26415 16.5327H21.8771C21.9279 16.5326 21.9767 16.5124 22.0126 16.4764C22.0486 16.4404 22.0689 16.3917 22.069 16.3408V5.11352C22.0689 5.06266 22.0486 5.01392 22.0126 4.97796C21.9767 4.942 21.9279 4.92175 21.8771 4.92163ZM18.2326 14.422C17.2582 14.422 16.7451 14.2102 16.2917 14.025C15.8867 13.8582 15.5365 13.714 14.7919 13.714C14.0473 13.714 13.6952 13.8582 13.2921 14.025C12.8395 14.212 12.3265 14.422 11.3511 14.422C10.3758 14.422 9.8637 14.2102 9.41023 14.025C9.00528 13.8582 8.65548 13.714 7.91043 13.714C7.76046 13.7098 7.61802 13.6473 7.51341 13.5398C7.4088 13.4322 7.35027 13.2881 7.35027 13.1381C7.35027 12.9881 7.4088 12.844 7.51341 12.7364C7.61802 12.6289 7.76046 12.5664 7.91043 12.5622C8.88486 12.5622 9.39788 12.774 9.85135 12.9592C10.2563 13.1264 10.6065 13.2707 11.3511 13.2707C12.0958 13.2707 12.4473 13.1264 12.8509 12.9592C13.3035 12.7726 13.8166 12.5622 14.7919 12.5622C15.7672 12.5622 16.2793 12.774 16.7328 12.9592C17.1377 13.1264 17.4875 13.2707 18.2326 13.2707C18.3826 13.2748 18.525 13.3373 18.6296 13.4449C18.7342 13.5524 18.7927 13.6965 18.7927 13.8465C18.7927 13.9966 18.7342 14.1407 18.6296 14.2482C18.525 14.3558 18.3826 14.4183 18.2326 14.4224V14.422ZM18.2326 11.6575C17.2582 11.6575 16.7451 11.4462 16.2917 11.2605C15.8867 11.0933 15.5365 10.9491 14.7919 10.9491C14.0473 10.9491 13.6952 11.0933 13.2921 11.2605C12.8395 11.4471 12.3265 11.6575 11.3511 11.6575C10.3758 11.6575 9.8637 11.4462 9.41023 11.2605C9.00616 11.0924 8.65327 10.9477 7.90866 10.9477C7.75599 10.9477 7.60957 10.8871 7.50161 10.7791C7.39366 10.6712 7.33301 10.5248 7.33301 10.3721C7.33301 10.2194 7.39366 10.073 7.50161 9.96502C7.60957 9.85707 7.75599 9.79642 7.90866 9.79642C8.88309 9.79642 9.39611 10.0077 9.84958 10.1934C10.2545 10.3606 10.6048 10.5049 11.3494 10.5049C12.094 10.5049 12.4456 10.3606 12.8492 10.1934C13.3018 10.0068 13.8148 9.79642 14.7901 9.79642C15.7654 9.79642 16.2775 10.0077 16.731 10.1934C17.136 10.3606 17.4858 10.5049 18.2308 10.5049C18.3835 10.5049 18.5299 10.5655 18.6379 10.6735C18.7458 10.7814 18.8065 10.9278 18.8065 11.0805C18.8065 11.2332 18.7458 11.3796 18.6379 11.4876C18.5299 11.5955 18.3835 11.6562 18.2308 11.6562L18.2326 11.6575ZM18.2326 8.89389C17.2582 8.89389 16.7451 8.6826 16.2917 8.49689C15.8867 8.3297 15.5365 8.18546 14.7919 8.18546C14.0473 8.18546 13.6952 8.3297 13.2921 8.49689C12.8395 8.68392 12.3265 8.89389 11.3511 8.89389C10.3758 8.89389 9.8637 8.6826 9.41023 8.49689C9.00528 8.3297 8.65548 8.18546 7.91043 8.18546C7.76046 8.18131 7.61802 8.11881 7.51341 8.01127C7.4088 7.90372 7.35027 7.75961 7.35027 7.60958C7.35027 7.45955 7.4088 7.31544 7.51341 7.20789C7.61802 7.10034 7.76046 7.03785 7.91043 7.0337C8.88486 7.0337 9.39788 7.24544 9.85135 7.43071C10.2563 7.59745 10.6065 7.74169 11.3511 7.74169C12.0958 7.74169 12.4473 7.59745 12.8509 7.43071C13.3035 7.24367 13.8166 7.0337 14.7919 7.0337C15.7672 7.0337 16.2793 7.24544 16.7328 7.43071C17.1377 7.59745 17.4875 7.74169 18.2326 7.74169C18.3826 7.74585 18.525 7.80834 18.6296 7.91589C18.7342 8.02343 18.7927 8.16754 18.7927 8.31757C18.7927 8.4676 18.7342 8.61172 18.6296 8.71926C18.525 8.82681 18.3826 8.8893 18.2326 8.89345V8.89389Z"
+                      fill="#AA9F8E" />
+                  </svg>
+                </li>
+                <li data-title="Экологично">
+                  <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M25.6594 20.6285C25.0109 20.5747 24.3746 20.4206 23.7734 20.1716C22.5728 22.541 20.3469 25.3885 16.2563 27.6463C15.979 27.7966 15.6685 27.8753 15.3531 27.8753C15.0377 27.8753 14.7273 27.7966 14.45 27.6463C5.51969 22.7269 5.41875 15.1247 5.41875 14.8006V11.0181C5.42024 10.7033 5.53566 10.3997 5.74367 10.1633C5.95168 9.92701 6.23822 9.77397 6.55031 9.73252C7.25165 9.6454 7.90905 9.3441 8.43289 8.8697C8.95673 8.39529 9.32151 7.77088 9.4775 7.08158C9.55364 6.80628 9.71808 6.5636 9.94555 6.39084C10.173 6.21808 10.4509 6.1248 10.7366 6.12533H19.9697C20.2544 6.12551 20.5313 6.21842 20.7584 6.39C20.9856 6.56158 21.1507 6.80249 21.2288 7.07627C21.3471 7.52645 21.543 7.95252 21.8078 8.33533C22.1776 7.63414 23.2512 5.61468 23.6087 4.93002C23.391 4.5226 23.2216 4.09113 23.1041 3.64439C23.01 3.3158 22.8113 3.02691 22.538 2.82169C22.2646 2.61647 21.9318 2.50615 21.59 2.50752H9.11625C8.77252 2.50697 8.43803 2.6188 8.16374 2.82596C7.88944 3.03311 7.69038 3.32425 7.59688 3.65502C7.38325 4.62269 6.87447 5.50018 6.14078 6.1663C5.40709 6.83243 4.48469 7.25434 3.50094 7.37377C3.12212 7.42066 2.77339 7.60407 2.5201 7.88963C2.26681 8.17519 2.12634 8.54331 2.125 8.92502V14.0303C2.125 14.1366 2.26313 24.6235 14.2322 31.211C14.5778 31.3967 14.9641 31.4934 15.3565 31.4925C15.7488 31.4916 16.1347 31.393 16.4794 31.2056C22.2913 28.0022 25.2928 23.9116 26.8334 20.6391C26.4429 20.6789 26.0491 20.6754 25.6594 20.6285Z"
+                      fill="#AA9F8E" />
+                    <path
+                      d="M31.0448 11.4301L27.6813 5.08764C27.5475 4.83673 27.348 4.62691 27.1041 4.48061C26.8603 4.3343 26.5813 4.25702 26.2969 4.25702C26.0125 4.25702 25.7335 4.3343 25.4897 4.48061C25.2458 4.62691 25.0463 4.83673 24.9125 5.08764L21.5439 11.4301C18.4903 17.6734 27.1245 22.5682 30.9064 16.7214C31.3874 15.9276 31.6531 15.022 31.6774 14.0941C31.7017 13.1662 31.4836 12.248 31.0448 11.4301Z"
+                      fill="#AA9F8E" />
+                    <path
+                      d="M21.151 9.48758C20.6541 8.92014 20.2979 8.24361 20.1113 7.51283C20.0957 7.46458 20.0649 7.42269 20.0234 7.39349C19.982 7.36428 19.9322 7.34933 19.8815 7.35088H10.8018C10.7504 7.34934 10.6999 7.36493 10.6583 7.39519C10.6167 7.42544 10.5863 7.46866 10.5719 7.51805C10.3627 8.39137 9.89378 9.18079 9.22698 9.78231C8.56018 10.3838 7.72678 10.7692 6.8366 10.8877C6.77837 10.8929 6.72402 10.919 6.68365 10.9613C6.64329 11.0036 6.61966 11.0591 6.61719 11.1175V14.8372C6.61719 14.9103 6.74257 22.0257 14.955 26.5499C15.072 26.6166 15.2043 26.6517 15.339 26.6517C15.4737 26.6517 15.606 26.6166 15.723 26.5499C18.6941 25.0103 21.1265 22.6034 22.6973 19.6487C21.2833 18.7772 20.2533 17.4009 19.8159 15.7985C19.3784 14.1961 19.5662 12.4874 20.3413 11.0183L21.151 9.48758Z"
+                      fill="#AA9F8E" />
+                  </svg>
+                </li>
+                <li data-title="Экологично">
+                  <svg width="30" height="27" viewBox="0 0 30 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M2.042 26.1556L1.23136 25.7996C1.04496 25.7175 0.894713 25.5705 0.808504 25.386C0.722296 25.2015 0.705991 24.9919 0.762611 24.7963C1.51807 22.1972 2.96876 18.4604 4.84815 16.2147C10.3948 9.58395 16.671 8.03591 16.7459 8.01725C16.6756 8.00701 10.3582 7.14653 2.02874 17.2514C1.70338 16.7059 1.4219 16.1354 1.18698 15.5454C-0.57162 11.1599 2.25441 3.12926 10.4022 1.25495C21.1915 -1.22748 29.4332 7.57814 29.4332 7.57814C29.4332 7.57814 23.3671 7.73745 19.5014 14.9928C16.3653 20.8783 9.86445 23.1823 5.23119 20.4876C4.60283 21.5135 3.80975 23.1586 3.19691 25.5918C3.16693 25.7104 3.11144 25.8211 3.03431 25.9161C2.95718 26.011 2.86026 26.088 2.75031 26.1417C2.64036 26.1954 2.52002 26.2245 2.39769 26.2269C2.27535 26.2293 2.15397 26.205 2.042 26.1556Z"
+                      fill="#AA9F8E" />
+                  </svg>
+                </li>
+                <li data-title="Экологично">
+                  <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="box_8865642" clip-path="url(#clip0_1715_1283)">
+                      <path id="Vector" fill-rule="evenodd" clip-rule="evenodd"
+                        d="M7.88797 22.3566L3.72623 20.1758C3.64917 20.1344 3.56466 20.1087 3.4776 20.1002C3.39053 20.0917 3.30265 20.1005 3.21904 20.1262C3.13543 20.152 3.05776 20.194 2.99053 20.25C2.9233 20.306 2.86786 20.3748 2.82741 20.4523C2.78696 20.5299 2.76231 20.6147 2.75489 20.7019C2.74747 20.789 2.75743 20.8768 2.78419 20.9601C2.81096 21.0434 2.85399 21.1205 2.91079 21.187C2.96759 21.2536 3.03704 21.3082 3.1151 21.3476L7.27625 23.5285C7.43134 23.6065 7.61089 23.6204 7.77611 23.5671C7.94134 23.5138 8.07898 23.3977 8.1593 23.2438C8.23961 23.0899 8.25616 22.9106 8.20536 22.7446C8.15456 22.5786 8.04049 22.4392 7.88779 22.3566L7.88797 22.3566ZM6.9449 4.21934L7.88826 3.72539L10.1934 2.51566L23.1676 9.76559L19.9186 11.4692L6.9449 4.21934ZM20.5715 12.6161V16.961L21.8781 15.1153C21.9635 14.9957 22.0864 14.908 22.2273 14.8663C22.3683 14.8246 22.5191 14.8312 22.6558 14.8851L24.2632 15.4669V10.6864L20.5718 12.6161H20.5715ZM11.5924 1.78318L24.5669 9.03305L28.4098 7.02381L14.9997 0L11.5924 1.78318ZM14.3362 29.9497V30L0.828125 22.9259V8.11635L14.3362 15.1862V29.9497ZM25.5894 9.99158V16.4127H25.5876C25.5876 16.519 25.562 16.6238 25.513 16.7181C25.464 16.8125 25.393 16.8937 25.306 16.9549C25.219 17.016 25.1186 17.0553 25.0132 17.0695C24.9079 17.0837 24.8006 17.0723 24.7006 17.0364L22.665 16.2955L20.4771 19.3805C20.4027 19.5048 20.2895 19.6013 20.155 19.6552C20.0205 19.7091 19.872 19.7175 19.7323 19.679C19.5926 19.6405 19.4693 19.5574 19.3814 19.4422C19.2934 19.3271 19.2456 19.1863 19.2452 19.0414V13.3109L15.6634 15.1859V30L29.1715 22.926V8.11635L25.5897 9.99135L25.5894 9.99158ZM18.5192 12.2017L5.54557 4.95188L1.58908 7.02381L14.9997 14.0435L18.5192 12.2017Z"
+                        fill="#AA9F8E" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1715_1283">
+                        <rect width="30" height="30" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </li>
+                <li data-title="Экологично">
+                  <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_1715_1337)">
+                      <path
+                        d="M25.1575 8.89191C24.7724 8.32885 24.5909 7.65129 24.6429 6.97115C24.6883 6.36912 24.5508 5.76743 24.2487 5.24473C23.9465 4.72203 23.4936 4.30264 22.9493 4.04139C22.3342 3.74607 21.8382 3.25006 21.5428 2.6351C21.2815 2.09082 20.8621 1.63806 20.3393 1.33603C19.8165 1.034 19.2147 0.896763 18.6126 0.94228C17.9321 0.993855 17.2544 0.812199 16.691 0.427227C16.1921 0.0862425 15.6019 -0.0961914 14.9976 -0.0961914C14.3933 -0.0961914 13.8031 0.0862425 13.3043 0.427227C12.7411 0.812199 12.0635 0.993861 11.3832 0.94228C10.7807 0.8964 10.1784 1.03345 9.65502 1.33549C9.13168 1.63752 8.71172 2.09049 8.4501 2.6351C8.15509 3.25031 7.65891 3.74642 7.0436 4.04139C6.49891 4.30297 6.04588 4.72287 5.7438 5.24613C5.44172 5.7694 5.30465 6.37165 5.35054 6.97408C5.40234 7.6542 5.22086 8.33167 4.83599 8.89484C4.49496 9.39362 4.3125 9.98375 4.3125 10.5879C4.3125 11.1921 4.49496 11.7823 4.83599 12.2811C5.21926 12.8436 5.39987 13.5196 5.34819 14.1983C5.30231 14.8007 5.43937 15.403 5.74146 15.9262C6.04354 16.4495 6.49657 16.8694 7.04126 17.131C7.65656 17.426 8.15275 17.9221 8.44775 18.5373C8.70872 19.0827 9.12843 19.5364 9.65185 19.8392C10.1753 20.1419 10.7779 20.2794 11.3809 20.2336C12.0612 20.182 12.7387 20.3637 13.3019 20.7487C13.8008 21.0897 14.391 21.2721 14.9953 21.2721C15.5996 21.2721 16.1898 21.0897 16.6886 20.7487C17.2521 20.3637 17.9298 20.182 18.6103 20.2336C19.2123 20.2792 19.8142 20.142 20.337 19.84C20.8598 19.5379 21.2793 19.0851 21.5405 18.5408C21.8358 17.9258 22.3319 17.4298 22.9469 17.1345C23.4928 16.8732 23.9469 16.453 24.2496 15.9289C24.5523 15.4049 24.6894 14.8016 24.6429 14.1983C24.5909 13.5182 24.7724 12.8406 25.1575 12.2775C25.4984 11.7788 25.6808 11.1888 25.6808 10.5847C25.6808 9.98065 25.4984 9.39063 25.1575 8.89191ZM20.6989 9.67474C20.1492 10.3574 19.5807 11.064 19.007 11.7842C18.8935 11.9267 18.8315 12.1035 18.8312 12.2857C18.8312 13.1803 18.8117 14.0743 18.7726 14.9677C18.7462 15.5143 18.1924 15.9503 17.7048 15.7927C16.9043 15.5354 16.0874 15.2495 15.2564 14.946C15.0899 14.885 14.9071 14.885 14.7406 14.946C13.9096 15.2495 13.0921 15.5354 12.2922 15.7927C11.8046 15.9503 11.2508 15.5143 11.2238 14.9677C11.1848 14.0747 11.1652 13.1805 11.1652 12.2852C11.1645 12.1032 11.1026 11.9267 10.9894 11.7842C10.4157 11.064 9.84721 10.3574 9.29751 9.67474C8.95878 9.25754 9.1932 8.6417 9.73645 8.46885C10.6214 8.19169 11.5034 7.90926 12.3795 7.63152C12.5562 7.57478 12.7094 7.46155 12.8155 7.30925C13.3429 6.54751 13.8704 5.77932 14.372 5.01641C14.438 4.90891 14.5305 4.82013 14.6406 4.75854C14.7506 4.69695 14.8747 4.6646 15.0008 4.6646C15.127 4.6646 15.251 4.69695 15.3611 4.75854C15.4712 4.82013 15.5637 4.90891 15.6297 5.01641C16.1331 5.77815 16.657 6.54634 17.1862 7.30866C17.2918 7.46158 17.4451 7.57514 17.6222 7.63152C18.4983 7.90926 19.3803 8.19169 20.2646 8.46885C20.8026 8.6417 21.0376 9.25754 20.6989 9.67474Z"
+                        fill="#AA9F8E" />
+                      <path
+                        d="M23.1723 18.3154C22.8806 18.5092 22.6463 18.7777 22.4938 19.093C22.1631 19.7816 21.6447 20.3629 20.9981 20.7698C20.3515 21.1767 19.6032 21.3926 18.8393 21.3928C18.7367 21.3928 18.633 21.3893 18.5305 21.3811C18.4812 21.3775 18.4314 21.3758 18.3828 21.3758C17.9901 21.3747 17.6063 21.493 17.2824 21.715C16.9203 21.963 16.5201 22.1502 16.0977 22.2693C17.0322 24.6957 18.2686 27.4842 19.3203 29.5033C19.6414 30.1016 20.6041 30.1895 20.835 29.6035C21.2094 28.6924 21.6002 27.7022 22.0016 26.6832C22.0509 26.5602 22.1471 26.4619 22.269 26.4098C22.3908 26.3577 22.5284 26.3562 22.6514 26.4055C23.6656 26.8191 24.6512 27.2211 25.5688 27.5773C26.1518 27.8146 26.7535 27.0588 26.5426 26.4125C25.7322 24.0201 24.3846 20.801 23.1723 18.3154Z"
+                        fill="#AA9F8E" />
+                      <path
+                        d="M12.7089 21.7146C12.3856 21.4932 12.0027 21.3749 11.6109 21.3753C11.5616 21.3753 11.5118 21.3753 11.4632 21.3806C11.3607 21.3888 11.2564 21.3923 11.1538 21.3923C10.3896 21.3927 9.64074 21.177 8.9938 20.7701C8.34687 20.3632 7.82817 19.7816 7.49758 19.0925C7.34523 18.7777 7.11109 18.5096 6.81965 18.3162C5.60969 20.8005 4.26262 24.0197 3.44934 26.4144C3.2384 27.0589 3.84016 27.8166 4.42317 27.5792C5.34075 27.2207 6.32629 26.8175 7.34055 26.4074C7.46355 26.3581 7.6011 26.3596 7.72295 26.4117C7.84481 26.4638 7.94099 26.5621 7.99036 26.6851C8.39172 27.7041 8.78254 28.6943 9.15696 29.6054C9.38782 30.1914 10.3505 30.1035 10.6716 29.5052C11.7263 27.4884 12.9597 24.7005 13.8943 22.2718C13.4716 22.1514 13.0713 21.9632 12.7089 21.7146Z"
+                        fill="#AA9F8E" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1715_1337">
+                        <rect width="30" height="30" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </li>
+              </ul>
+              <div class="product__info">
+                <ul>
+                  <li>
+                    <span class="tit">Артикул</span>
+                    <span class="data">OSQ TABOX PRO 1555</span>
+                  </li>
+                  <li>
+                    <span class="tit">Размер</span>
+                    <span class="data">Крафт</span>
+                  </li>
+                  <li>
+                    <span class="tit">Количество в уп.</span>
+                    <span class="data">OSQ SmartPack 550</span>
+                  </li>
+                  <li>
+                    <span class="tit">Объем м3</span>
+                    <span class="data">250</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="product__controls">
+                <a href="#" class="btn">Заказать образцы</a>
+
+                <button class="btn-patented"
+                  data-title='OSQ Group – один из крупнейших в России производителей технологичной упаковки для пищевой промышленности и ресторанного бизнеса. OSQ создана  на базе компании'>
+                  Запатентовано
+                </button>
+              </div>
+
+
+              <span class="product-information">
+                Данная информация является ознакомительной и действительна на сентябрь <span class="thisYear"></span> г.
+                Для размещения заказа
+                запросите у менеджера актуальный Бланк заказа.
+              </span>
+
+            </div>
+            <div class="product__column product__picture">
+              <a href="#" data-modal="modal-product" class="btn-360"><svg width="57" height="54" viewBox="0 0 57 54"
+                  fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M52.301 27.2123C52.508 27.4192 52.8436 27.4192 53.0505 27.2123L56.4234 23.8394C56.6304 23.6324 56.6304 23.2968 56.4234 23.0898C56.2165 22.8829 55.8809 22.8829 55.6739 23.0898L52.6758 26.088L49.6776 23.0898C49.4707 22.8829 49.1351 22.8829 48.9281 23.0898C48.7211 23.2968 48.7211 23.6324 48.9281 23.8394L52.301 27.2123ZM26.8383 1.53C40.8152 1.53 52.1458 12.8606 52.1458 26.8375L53.2058 26.8375C53.2058 12.2751 41.4006 0.469999 26.8383 0.469999L26.8383 1.53ZM2.06373 21.6457C4.45843 10.159 14.6412 1.53 26.8383 1.53L26.8383 0.469999C14.1291 0.469998 3.52112 9.46118 1.02604 21.4293L2.06373 21.6457Z"
+                    fill="#AA9F8E" />
+                  <path
+                    d="M1.00078 26.8375C1.00078 12.5678 12.5686 0.999998 26.8383 0.999999C41.1079 0.999999 52.6758 12.5678 52.6758 26.8375"
+                    stroke="#AA9F8E" stroke-width="1.06" stroke-linecap="round" />
+                  <path
+                    d="M16.7766 28.8904C15.0879 28.8904 13.8569 28.1486 13.273 27.0281L14.2988 25.7024C14.8512 26.5231 15.7035 27.0754 16.6662 27.0754C17.8498 27.0754 18.4496 26.381 18.4496 25.5446C18.4496 24.5345 17.6762 23.9821 16.3979 23.9821H15.6088V22.1672H16.319C17.2185 22.1672 18.0234 21.599 18.0234 20.6521C18.0234 19.863 17.5658 19.3106 16.6188 19.3106C15.735 19.3106 15.0879 19.6894 14.5356 20.4943L13.5255 19.2159C14.1252 18.0954 15.2773 17.4956 16.7924 17.4956C18.6863 17.4956 19.9646 18.5688 19.9646 20.3049C19.9646 21.5517 19.3965 22.4355 18.276 22.9247V22.9721C19.649 23.2088 20.3908 24.2978 20.3908 25.6077C20.3908 27.6436 18.8125 28.8904 16.7766 28.8904ZM21.6892 24.8028C21.6892 20.7468 24.7036 18.0954 27.1183 17.4956L27.8601 18.8687C26.0609 19.4053 24.4038 20.7783 23.8356 22.9089C24.2933 22.2777 25.0035 21.8831 26.1082 21.8831C27.7969 21.8831 29.2016 23.2404 29.2016 25.2605C29.2016 27.5805 27.4024 28.8904 25.6348 28.8904C23.1728 28.8904 21.6892 27.0281 21.6892 24.8028ZM23.6147 24.8186C23.6147 26.0812 24.3249 27.0754 25.6506 27.0754C26.6606 27.0754 27.2761 26.2706 27.2761 25.3867C27.2761 24.3767 26.6606 23.5718 25.4927 23.5718C24.4985 23.5718 23.8987 24.2189 23.6147 24.8186ZM30.1421 23.193C30.1421 19.8156 31.31 17.543 33.8509 17.543C36.3761 17.543 37.5439 19.8156 37.5439 23.193C37.5439 26.5704 36.4076 28.8431 33.8825 28.8431C31.3415 28.8431 30.1421 26.5704 30.1421 23.193ZM32.0833 23.193C32.0833 25.8918 32.6988 27.1544 33.8825 27.1544C35.145 27.1544 35.6185 25.9233 35.6185 23.193C35.6185 20.4627 35.1135 19.2475 33.8509 19.2475C32.6041 19.2475 32.0833 20.5258 32.0833 23.193Z"
+                    fill="#AA9F8E" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M1.00833 28.8249C1.01311 29.0148 1.01993 29.204 1.02878 29.3928C1.00966 29.2705 1 29.1474 1 29.0237C1 28.9573 1.00279 28.891 1.00833 28.8249ZM52.6462 29.3928C52.6551 29.204 52.6619 29.0148 52.6667 28.825C52.6722 28.891 52.675 28.9573 52.675 29.0237C52.675 29.1474 52.6653 29.2705 52.6462 29.3928ZM52.6462 29.3928C52.004 33.5023 40.6947 36.775 26.8375 36.775C12.9803 36.775 1.67097 33.5023 1.02878 29.3928C1.67097 43.0912 12.9803 54 26.8375 54C40.6947 54 52.004 43.0911 52.6462 29.3928Z"
+                    fill="#AA9F8E" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M41.5304 18.9489C41.939 18.9489 42.2702 18.6177 42.2702 18.2091C42.2702 17.8006 41.939 17.4693 41.5304 17.4693C41.1218 17.4693 40.7906 17.8006 40.7906 18.2091C40.7906 18.6177 41.1218 18.9489 41.5304 18.9489ZM41.5304 20.6751C42.8923 20.6751 43.9964 19.5711 43.9964 18.2091C43.9964 16.8472 42.8923 15.7432 41.5304 15.7432C40.1685 15.7432 39.0645 16.8472 39.0645 18.2091C39.0645 19.5711 40.1685 20.6751 41.5304 20.6751Z"
+                    fill="#AA9F8E" />
+                </svg>
+              </a>
+              <div class="swiper product__picture__slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="img/primer-big.png" class="loop" data-fancybox="products">
+                      <img src="img/product-big.png" alt="" width="191" height="240" />
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="img/primer-big.png" class="loop" data-fancybox="products">
+                      <img src="img/product-big.png" alt="">
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="img/primer-big.png" class="loop" data-fancybox="products">
+                      <img src="img/product-big.png" alt="">
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="img/primer-big.png" class="loop" data-fancybox="products">
+                      <img src="img/product-big.png" alt="">
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="img/primer-big.png" class="loop" data-fancybox="products">
+                      <img src="img/product-big.png" alt="">
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <button class="swiper-button-prev">
+                  <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.6" d="M8 13L2 7L8 1" stroke="#AA9F8E" stroke-width="2" />
+                  </svg>
+                </button>
+                <button class="swiper-button-next">
+                  <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L7 7L1 13" stroke="#ECEDE8" stroke-width="2" stroke-linecap="round" />
+                  </svg>
+                </button>
+              </div>
+              <div class="swiper swiper-navigation">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="img/product-small-1.png" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/product-small-2.png" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/product-small-3.png" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/product-small-4.png" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/product-small-5.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product__column">
+              <div class="product__name">
+                <h2 class="caption">Детали</h2>
+              </div>
+              <div class="product__info">
+                <ul>
+                  <li>
+                    <span class="tit">Цвет</span>
+                    <span class="data">Крафт</span>
+                  </li>
+                  <li>
+                    <span class="tit">Тип упаковки</span>
+                    <span class="data">С окном/Смотровое окно</span>
+                  </li>
+
+                  <li>
+                    <span class="tit">Тип еды</span>
+                    <span class="data">Жидкий / Жирный / Сухой</span>
+                  </li>
+                  <li>
+                    <span class="tit">Тип упаковки</span>
+                    <span class="data">С окном/Смотровое окно</span>
+                  </li>
+                  <li>
+                    <span class="tit">Тип доставки</span>
+                    <span class="data">В сформированном виде</span>
+                  </li>
+                  <li>
+                    <span class="tit">Тип доставки</span>
+                    <span class="data">Гостиницы/HoReCa / Кафе / Кейтеринг / На вынос / Рестораны / Ритейл</span>
+                  </li>
+
+                </ul>
+              </div>
+            </div>
+            <div class="product__column">
+              <div class="product__name">
+                <h2 class="caption">Описание</h2>
+              </div>
+
+              <div class="product-text">
+                <p>В продуктовый портфель OSQ входят контейнеры для салатов и лапши, одноразовые ланч-боксы, упаковка
+                  для фастфуда и сэндвичей, суши и роллов, одноразовые бумажные стаканы, а также упаковка для
+                  кондитерских изделий и многое другое. В продуктовый портфель OSQ входят контейнеры для салатов и
+                  лапши, одноразовые ланч-боксы, упаковка для фастфуда и сэндвичей, суши и роллов, одноразовые бумажные
+                  стаканы, а также упаковка для кондитерских изделий и многое другое.</p>
+                <!-- <p>В продуктовый портфель OSQ входят контейнеры для салатов и лапши, одноразовые ланч-боксы, упаковка
+                  для фастфуда и сэндвичей, суши и роллов, одноразовые бумажные стаканы, а также упаковка для
+                  кондитерских изделий и многое другое.</p>
+                <p>В продуктовый портфель OSQ входят контейнеры для салатов и лапши, одноразовые ланч-боксы, упаковка
+                  для фастфуда и сэндвичей, суши и роллов, одноразовые бумажные стаканы, а также упаковка для
+                  кондитерских изделий и многое другое. В продуктовый портфель OSQ входят контейнеры для салатов и
+                  лапши, одноразовые ланч-боксы, упаковка для фастфуда и сэндвичей, суши и роллов, одноразовые бумажные
+                  стаканы, а также упаковка для кондитерских изделий и многое другое. В продуктовый портфель OSQ входят
+                  контейнеры для салатов и лапши.</p>
+
+                <ul>
+                  <li>В продуктовый портфель</li>
+                  <li>В продуктовый портфель</li>
+                  <li>В продуктовый портфель</li>
+                  <li>В продуктовый портфель</li>
+                  <li>В продуктовый портфель</li>
+                </ul> -->
+              </div>
+
+              <a href="#" class="btn-read-all">Читать все </a>
+
+            </div>
+            <div class="product__column product__column--reviews">
+
+              <div class="product__name">
+                <h2 class="caption">Галерея</h2>
+              </div>
+
+              <div class="reviews-product">
+                <div class="swiper gallery-slider">
+                  <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                      <a href="img/pic-simple1.jpg" data-fancybox="gallery1"></a>
+                      <img src="img/pic-simple1.jpg" alt="">
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="text-video">
+
+
+                        <iframe id="3d" width="100%" height="100%" src="https://www.youtube.com/embed/N8lEBhtxyvg"
+                          title="text" frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                          allowfullscreen>
+                        </iframe>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <a href="img/pic-simple1.jpg" data-fancybox="gallery1"></a>
+                      <img src="img/pic-simple1.jpg" alt="">
+                    </div>
+
+
+                    <div class="swiper-slide">
+                      <a href="img/pic-simple1.jpg" data-fancybox="gallery1"></a>
+                      <img src="img/pic-simple1.jpg" alt="">
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="text-video">
+                        <span class="play play-video"></span>
+                        <video poster="img/pic-video2.jpg">
+                          <source src="video/video.mp4" type="video/mp4">
+                        </video>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <a href="img/pic-simple1.jpg" data-fancybox="gallery1"></a>
+                      <img src="img/pic-simple1.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <button class="swiper-button-prev">
+                  <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.6" d="M8 13L2 7L8 1" stroke="#AA9F8E" stroke-width="2" />
+                  </svg>
+                </button>
+                <button class="swiper-button-next">
+                  <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L7 7L1 13" stroke="#ECEDE8" stroke-width="2" stroke-linecap="round" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__inner">
+        <div class="footer-top">
+          <h2 class="footer-top__caption">Оставить
+            заявку
+          </h2>
+          <div class="input-wrapper">
+            <input type="text" class="phone-input" placeholder="Номер телефона" />
+            <button class="btn btn--green">Отправить
+              заявку</button>
+          </div>
+        </div>
+        <div class="footer-content">
+          <div class="footer-leftSide">
+            <div class="logo-wrapper">
+              <a href="/"></a>
+              <picture class='picture'>
+                <source type="image/webp" srcset="img/logo-big.webp" />
+                <img src="img/logo-big.png" alt="" />
+              </picture>
+            </div>
+            <span class="copy-text">OSQ Group – крупнейший российский производитель крафтовой упаковки в сегментах
+              HoReCa, Retail и «Пищевое производство».</span>
+          </div>
+          <div class="footer-rightSide">
+            <ul class="menu-footer">
+              <li><a href="#">О компании</a></li>
+              <li><a href="#">Каталог</a></li>
+              <li><a href="#">Производство</a></li>
+              <li><a href="#">ESG</a></li>
+              <li><a href="#">Доставка</a></li>
+              <li><a href="#">Дистрибьюторы</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+            <div class="footer-info">
+              <div class="footer-info__col">
+                <span class="footer-info__title">Адрес</span>
+                <p>Москва, Проектируемый проезд №4062, дом 6, стр.16, бизнес-центр Порт Плаза</p>
+              </div>
+              <div class="footer-info__col">
+                <span class="footer-info__title">Телефон</span>
+                <a href="tel:74957738718">+ 7 (495) 773-87-18</a>
+              </div>
+              <div class="footer-info__col">
+                <span class="footer-info__title">Эл. почта</span>
+                <a href="tel:74957738718">clients@osqgroup.ru</a>
+              </div>
+              <div class="footer-info__col">
+                <span class="footer-info__title">Режим работы</span>
+                <p>ПН-ПТ: 8:00 – 19:00</p>
+              </div>
+            </div>
+            <div class="footer-bottom">
+              <ul class="footer-social">
+                <li>
+                  <a href="#">
+                    <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M19.0444 0.112621L0.953623 7.08874C-0.280997 7.58462 -0.273854 8.27336 0.727106 8.58048L5.37173 10.0294L16.118 3.24917C16.6262 2.94 17.0904 3.10632 16.7088 3.44507L8.00218 11.3028H8.00014L8.00218 11.3038L7.68179 16.0913C8.15115 16.0913 8.35828 15.876 8.62153 15.6219L10.8775 13.4282L15.5701 16.8943C16.4354 17.3708 17.0567 17.1259 17.272 16.0933L20.3525 1.5758C20.6678 0.311588 19.8698 -0.260827 19.0444 0.112621Z"
+                        fill="white" />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <svg width="28" height="18" viewBox="0 0 28 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M15.2616 17.0645C5.9533 17.0645 0.644073 10.6831 0.422852 0.0644531H5.08551C5.23867 7.85825 8.67602 11.1595 11.3987 11.8402V0.0644531H15.7893V6.78617C18.478 6.49688 21.3025 3.43382 22.2554 0.0644531H26.6459C25.9142 4.2166 22.8511 7.27967 20.6729 8.53893C22.8511 9.55995 26.3398 12.2316 27.6671 17.0645H22.8341C21.796 13.8312 19.2097 11.3297 15.7893 10.9894V17.0645H15.2616Z"
+                        fill="white" />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <svg width="21" height="15" viewBox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M19.3084 1.7173C19.6145 2.02346 19.8352 2.40448 19.9482 2.82242C20.5995 5.4437 20.449 9.58362 19.9609 12.306C19.8478 12.724 19.6272 13.105 19.321 13.4112C19.0149 13.7173 18.6339 13.9379 18.2159 14.051C16.6859 14.4683 10.5278 14.4683 10.5278 14.4683C10.5278 14.4683 4.36981 14.4683 2.83979 14.051C2.42185 13.9379 2.04082 13.7173 1.73466 13.4112C1.42851 13.105 1.20789 12.724 1.0948 12.306C0.439797 9.69616 0.619354 5.55371 1.08216 2.83507C1.19525 2.41713 1.41586 2.0361 1.72202 1.72994C2.02818 1.42379 2.4092 1.20317 2.82714 1.09008C4.35717 0.672798 10.5152 0.660156 10.5152 0.660156C10.5152 0.660156 16.6732 0.660156 18.2033 1.07743C18.6212 1.19053 19.0022 1.41114 19.3084 1.7173ZM13.6638 7.56423L8.55525 10.5231V4.60534L13.6638 7.56423Z"
+                        fill="white" />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+              <a href="#" data-modal="modal-personal">Соглашение о конфиденциальности</a>
+              <span class="copy-right"><span class="thisYear"></span> &copy; Все права защищены</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <button class="btn-top-page">
+      <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1 1L7 7L1 13" stroke-width="2" stroke-linecap="round" />
+      </svg>
+    </button>
+  </div>
+
+  <div class="micromodal-slide modal" id="modal-call" aria-hidden="true">
+    <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+      <div class="modal__container" role="dialog" aria-modal="true">
+        <div class="modal__inner">
+          <button class="modal__close" aria-label="Close modal" data-micromodal-close>
+
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M31 31L16 16M16 16L1 31M16 16L1 1M16 16L31 1" stroke="#AA9F8E" stroke-width="2" />
+            </svg>
+
+
+          </button>
+          <div class="modal__content" autocomplete="off">
+            <form class="modal__form">
+              <h2 class="caption">Заказать звонок</h2>
+              <div class="input-list">
+                <div class="input-wrapper">
+                  <input type="text" placeholder="Ваше имя*">
+                </div>
+                <div class="input-wrapper">
+                  <input type="text" placeholder="Ваш телефон*" class="phone-input">
+                </div>
+                <div class="input-wrapper">
+                  <input type="text" placeholder="Город*" required>
+                </div>
+                <div class="input-wrapper">
+                  <textarea placeholder="Комментарий"></textarea>
+                </div>
+              </div>
+              <div class="modal__controls">
+                <button type="submit" class="btn">Жду звонка</button>
+              </div>
+              <div class="check-block">
+                <input type="checkbox" id="moda1">
+                <label for="moda1">Нажимая кнопку «Отправить», я даю свое согласие на обработку моих персональных
+                  данных, в
+                  соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ «О персональных данных», на условиях и
+                  для целей, определенных в Согласии на обработку персональных данных.</label>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="micromodal-slide modal" id="modal-info" aria-hidden="true">
+    <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+      <div class="modal__container" role="dialog" aria-modal="true">
+        <div class="modal__inner">
+          <button class="modal__close" aria-label="Close modal" data-micromodal-close>
+
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M31 31L16 16M16 16L1 31M16 16L1 1M16 16L31 1" stroke="#AA9F8E" stroke-width="2" />
+            </svg>
+
+
+          </button>
+          <div class="modal__content" autocomplete="off">
+            <form class="modal__form">
+              <div class="modal-info">
+                <h2 class="caption">Просто заголовок</h2>
+
+                <div class="terms-wrap">
+                  <div class="terms-text">
+                    <div class="text">
+                      <h2 class="caption caption--small">1. Декларация о соответствии ЕАС (ЕАЭС) </h2>
+                      <p>Это документ, который подтверждает соответствие продукции требованиям Технического Регламента
+                        Таможенного Союза ТР ТС 005/2011 «О безопасности упаковки».</p>
+                      <p>Перед выпуском в обращение на таможенной территории Таможенного союза упаковка (укупорочные
+                        средства) должна быть подвергнута процедуре подтверждения соответствия требованиям настоящего
+                        технического регламента. </p>
+                      <p>Декларация это необходимый обязательный документ для реализации продукции (упаковки) на
+                        территории Таможенный союз Евразийского экономического союза (ТС ЕАЭС). В состав союза входят
+                        следующие государства: Россия, Казахстан, Беларусь, Армения, Киргизия.</p>
+
+
+                      <h2 class="caption caption--small">2. МЕЖДУНАРОДНАЯ СЕРТИФИКАЦИЯ.</h2>
+                      <p>СЕРТИФИКАЦИЯ СИСТЕМ БЕЗОПАСНОСТИ ПИЩЕВЫХ ПРОДУКТОВ FSSC 22000 (v. 5.1)</p>
+                      <p>FSSC 22000 (Food Safety System Certification 22000) – это схема основана на принципах стандарта
+                        ISO 22000 и ISO/TS, и является подтверждением того, что на предприятии внедрена система
+                        менеджмента безопасности пищевой продукции (СМБПП).</p>
+                      <p>Сертификация FSSC 22000 одобрена Глобальной инициативой по безопасности пищевых продуктов
+                        (GFSI). Она используется на предприятиях, работающих в цепи поставок пищевой продукции и
+                        применима для компаний любого масштаба и рода деятельности - от поставщиков сырья и упаковки до
+                        производителей готовой продукции. </p>
+                      <p>Производственная компания ООО»ДЖИДИПРО» (LLC «DZIDIPRO») успешно прошла необходимые аудиты и
+                        получила свой первый сертификат FSSC под аккредитацией UKAS в группе компаний SGS
+                        («SGS Vostok Limited»). Компания SGS – это мировой лидер в сфере инспекционных услуг,
+                        экспертизы, испытаний и сертификации.</p>
+
+                      <h2 class="caption caption--small">3. МЕЖДУНАРОДНАЯ СЕРТФИКАЦИЯ </h2>
+                      <p>COMPOSTABLE CERTIFICATE (EN 13432:2000-12)</p>
+                      <p>СЕРТИФИКАТ НА БИОРАЗЛАГАЕМОСТЬ УПАОКВКИ МЕТОДОМ КОМПОСТИРОВАНИЯ.</p>
+                      <p>Производственная компания ООО»ДЖИДИПРО» (LLC «DZIDIPRO») успешно прошла испытания продукции
+                        (биоразлагаемой упаковки) и получила сертификат от компании DIN CERTCO - орган по сертификации,
+                        является частью TÜV Rheinland Group и Deutsches Institut DIN für Normung e. V. Компания по
+                        сертификации базируется в Германии. </p>
+
+                      <h2 class="caption caption--small">4. СИСТЕМЫ МЕНЕДЖМЕНТА КАЧЕСТВА ТРЕБОВАНИЯ.</h2>
+                      <p>СЕРТИФИКАТ ISO 9001:2015</p>
+                      <p>ISO 9001:2015 - международный стандарт сертификации, который содержит в себе требования к
+                        системам управления качеством и критерии эффективного менеджмента, нацеленного на обеспечение
+                        максимально продуктивной работы предприятия.</p>
+                      <h2 class="caption caption--small">5. СИСТЕМА МЕНЕДЖМЕНТА ПИЩЕВОЙ БЕЗОПАСНОТИ </h2>
+                      <p>СЕРТИФИКАТ ISO 22000:2018</p>
+                      <p>Требования к любой организации, участвующей в цепи создания пищевой продукции </p>
+                      <p>стандарт, разработанный с целью создания организационных форм деятельности, обеспечивающих на
+                        предприятиях пищевой промышленности условия для выпуска безопасной для здоровья человека
+                        продукции. Стандарт затрагивает всю цепочку участвующих в изготовлении пищевых продуктов
+                        организаций.</p>
+
+
+                      <h2 class="caption caption--small">6. ПРОТОКОЛЫ ЛАБОРАТОРНЫХ ИСПЫТАНИЙ</h2>
+                      <p>-ЖИРОСТОЙКОСТЬ/ВЛАГОСТОЙКОСТЬ </p>
+                      <p>-РАЗОГРЕВ В СВЧ-ПЕЧИ</p>
+                      <p>Наша упаковка подходит не только для хранения пищевых продуктов, так же ее смело можно
+                        использовать для разогрева готовых кулинарных блюд с СВЧ-печи. Безопасность упаковки
+                        подтверждается протоколами испытаний от аккредитованной лаборатории </p>
+
+                      <p>Мы являемся ведущей в мире компанией по тестированию, инспекции и сертификации</p>
+
+
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="micromodal-slide modal" id="modal-personal" aria-hidden="true">
+    <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+      <div class="modal__container" role="dialog" aria-modal="true">
+        <div class="modal__inner">
+          <button class="modal__close" aria-label="Close modal" data-micromodal-close>
+
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M31 31L16 16M16 16L1 31M16 16L1 1M16 16L31 1" stroke="#AA9F8E" stroke-width="2" />
+            </svg>
+
+
+          </button>
+          <div class="modal__content" autocomplete="off">
+            <form class="modal__form">
+              <div class="modal-personal">
+                <h2 class="caption">Лицензионное соглашение</h2>
+
+                <div class="terms-wrap">
+                  <div class="terms-text">
+                    <div class="text">
+                      <p>Политика конфиденциальности персональных данных Посетителей сайта </p>
+                      <p>Политика конфиденциальности обработки персональных данных (далее – Политика) действует в
+                        отношении всей информации, которую ООО «ОЭСКЬЮ ТРЕЙДИНГ» (далее – Компания) могут получить о
+                        Пользователе во время использования им сайта https://osqgroup.ru/</p>
+                      <p>Основанием для обработки персональных данных являются: статья 24 Конституции РФ, статья 6
+                        Федерального закона № 152-ФЗ «О персональных данных» с дополнениями и изменениями.</p>
+                      <h2 class="caption caption--small">Термины и определения</h2>
+                      <p>Персональные данные – любая информация, относящаяся прямо или косвенно к определенному или
+                        определяемому физическому лицу (субъекту персональных данных); </p>
+                      <p>Сайт – это совокупность текстов, графических элементов, дизайна, изображений, программного
+                        кода, фото- и видеоматериалов и иных результатов интеллектуальной деятельности, содержащихся в
+                        сети Интернет под доменным именем https://osqgroup.ru/</p>
+                      <p>Посетитель, субъект персональных данных – это любое лицо, осуществившее вход на Сайт и
+                        согласившееся с условиями настоящей Политики, независимо от факта прохождения процедур отправки
+                        форм.</p>
+                      <p>Обработка персональных данных – любое действие (операция) или совокупность действий (операций)
+                        с персональными данными, совершаемое с использованием средств автоматизации или без их
+                        использования. </p>
+                      Технологии «cookies»
+                      <h2 class="caption caption--small"></h2>
+                      <p>Cookies – небольшие по размеру текстовые файлы, хранящиеся в браузере Посетителей сайта. </p>
+                      <p>На совокупности различных веб-проектов Компании (при просмотре Сайта osqgroup.ru) происходит
+                        автоматический сбор (из Cookies) следующих обезличенных статистических данных о Посетителе
+                        сайта, в том числе:</p>
+                      <p>- тип выполненного на сайте действия (клик, наведение курсора и т.п.); </p>
+                      <p>- дата и время выполнения действия;</p>
+                      <p>- URL страницы; </p>
+                      <p>- Referer;</p>
+                      <p>- IP (без возможности работы с IP-адресами в статистике); </p>
+                      <p>- User-Agent; </p>
+                      <p>- ClientID (идентификатор браузера по файлу Cookie);</p>
+                      <p> - экранное разрешение; </p>
+                      <p> - класс HTML-элемента, на который происходит клик; </p>
+                      <p>- данные о фактах заполнения форм на веб-сайтах, включая ошибки при их заполнении.</p>
+                      <p>Пользуясь Сайтом, Посетитель сайта соглашается на то, что Компания может использовать
+                        статистические данные и файлы Cookies для их последующей обработки системой Яндекс.Метрика и
+                        может передавать их третьему лицу для проведения исследований, выполнения работ или оказания
+                        услуг по поручению Компании. </p>
+                      <p>Посетитель сайта может самостоятельно управлять файлами Cookies путем изменения настроек
+                        браузера. Изменения пользовательских настроек, в результате которых файлы Cookies будут
+                        заблокированы, могут привести к недоступности отдельных компонентов Сайта osqgroup.ru. </p>
+                      <p>Пользуясь Сайтом, в том числе при заполнении веб-форм на сайте, Посетитель сайта соглашается на
+                        получение рекламы, а также использование сведений о нем в целях продвижения товаров Компании, в
+                        том числе путем осуществления прямых контактов с Абонентом с помощью средств связи.</p>
+
+                      <h2 class="caption caption--small">Общие положения</h2>
+                      <p>Принимая условия настоящей Политики, Посетитель даёт своё согласие Компании на сбор, хранение и
+                        обработку своих персональных данных, указанных путём использования пользователями Сайта, а также
+                        заполняя web-формы, содержащие Ваши персональные данные.</p>
+                      <p>Передавая Ваши персональные данные, Вы соглашаетесь на условия, описанные в Политике. Мы
+                        гарантируем добросовестный сбор данных и сохранение их конфиденциальности в соответствии с
+                        действующим законодательством Российской Федерации. В случае несогласия с этими условиями
+                        Посетитель должен воздержаться от использования Сайта.</p>
+                      <p>Компания производит обработку персональных данных Посетителя сайта, включая фамилию, имя,
+                        отчество, дату и место рождения, контактный телефон, реквизиты документа, удостоверяющего
+                        личность, адрес регистрации, адрес электронной почты, адрес доставки и др. </p>
+                      <p>Компания осуществляет обработку персональных данных способом сбора, систематизации, накопления,
+                        хранения, уточнения (обновления, изменения), использования, передачи (предоставления, доступа),
+                        обезличивания, блокирования, уничтожения.</p>
+                      Цели сбора и обработки персональных данных Посетителя
+                      <p>Компания обрабатывает персональные данные Посетителя сайта исключительно в целях, для которых
+                        они предоставлялись, в том числе: </p>
+                      <p>— предоставление возможности подписаться на почтовую рассылку по специальным предложениям и
+                        темам</p>
+                      <p>- установления обратной связи, включая направление уведомлений, запросов, обработка запросов и
+                        заявок от Посетителя сайта; </p>
+                      <p>- определения локации Посетителя сайта для обеспечения безопасности, предотвращения
+                        мошенничества; </p>
+                      <p>- подтверждения достоверности и полноты персональных данных, предоставленных Посетителем сайта;
+                      </p>
+                      <p>- для других целей с согласия Посетителя сайта. </p>
+                      <p>По достижению целей обработки, а также наступления иных оснований, предусмотренных
+                        законодательством Российской Федерации в области обработки и защиты персональных данных,
+                        персональные данные Посетителей сайта уничтожаются.</p>
+                      Права Посетителя сайта
+                      <p>Посетитель сайта вправе реализовать свои права, предусмотренные законодательством Российской
+                        Федерации о персональных данных, в том числе, но не ограничиваясь: </p>
+                      <p> - уточнять, обновлять свои персональные данные, требовать их блокирования или уничтожения;</p>
+                      <p>- запрашивать у Компании перечень обрабатываемых персональных данных, правовых оснований
+                        обработки, источники их получения, информацию о сроках обработки и хранения, а также иные
+                        сведения, связанные с обработкой своих персональных данных.</p>
+
+                      <h2 class="caption caption--small">Срок обработки персональных данных</h2>
+                      <p>Посетитель сайта дает согласие на обработку его персональных данных на весь срок, необходимый
+                        Компании для достижения целей обработки. Посетитель сайта вправе в любое время отозвать согласие
+                        на обработку его персональных данных путем направления письменного заявления по адресу: 115432,
+                        г. Москва, Проектируемый проезд 4062-й, стр.16, эт.6, комн.15.</p>
+
+                      <h2 class="caption caption--small">Обеспечение безопасности персональных данных</h2>
+                      <p>Компания гарантирует Посетителю сайта надлежащую защиту персональных данных при их обработке.
+                        Компания применяет правовые, организационные и технические меры для защиты персональных данных
+                        от несанкционированного или случайного доступа к ним, а также от иных неправомерных действий в
+                        отношении персональных данных, в том числе: </p>
+                      <p>- разграничение доступа к информационным системам, обрабатывающим персональные данные; </p>
+                      <p>- предотвращение внедрения в информационные системы, обрабатывающие персональные данные,
+                        вредоносных программ и программных закладок; </p>
+                      <p>- межсетевое экранирование с целью управления доступом, фильтрации сетевых пакетов и трансляции
+                        сетевых адресов для скрытия структуры информационных систем, обрабатывающих персональные данные;
+                      </p>
+                      <p> - обнаружение вторжений в информационные системы, обрабатывающие персональные данные,
+                        нарушающие или создающие предпосылки к нарушению установленных требований по обеспечению
+                        безопасности персональных данных; </p>
+                      <p>- анализ защищенности информационных систем персональных данных, предполагающий применение
+                        специализированных программных средств. </p>
+                      <p>В Компании приняты локальные акты по обеспечению безопасности персональных данных. Доступ к
+                        персональным данным Посетителей сайта предоставляется только уполномоченным работникам Компании.
+                      </p>
+                      <h2 class="caption caption--small">Заключительные положения</h2>
+                      <p>Компания вправе вносить изменения или дополнения в настоящую Политику в случае необходимости, а
+                        также в случае внесения соответствующих изменений в действующее законодательство Российской
+                        Федерации о персональных данных.</p>
+                      <p>Посетитель сайта всегда может ознакомиться с актуальной версией Политики на сайте Компании.
+                        Продолжая пользоваться Сайтом osqgroup.ru, Посетитель сайта подтверждает согласие с внесенными
+                        изменениями в Политику. </p>
+                      <p>Дата обновления Политики «01» ноября 2022 года</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="read-to">
+                  <span>Прочитайте до конца</span>
+
+                  <svg width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 1L7.5 6.5L13 1" stroke="#00A19A" stroke-width="2" />
+                  </svg>
+
+                </div>
+
+                <div class="modal__controls">
+                  <button type="submit" class="btn btn--green">Принимаю</button>
+                  <button class="btn btn--border-green" data-micromodal-close>Не принимаю</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="micromodal-slide modal" id="modal-product" aria-hidden="true">
+    <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+      <div class="modal__container" role="dialog" aria-modal="true">
+        <div class="modal__inner">
+          <button class="modal__close" aria-label="Close modal" data-micromodal-close>
+
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M31 31L16 16M16 16L1 31M16 16L1 1M16 16L31 1" stroke="#AA9F8E" stroke-width="2" />
+            </svg>
+
+
+          </button>
+          <div class="modal__content" autocomplete="off">
+
+            <div class="sketchfab-embed-wrapper"> <iframe width="100%" height="500px" title="Chinese Temple-Freepoly.org" frameborder="0"
+                allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true"
+                allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport
+                execution-while-not-rendered web-share
+                src="https://sketchfab.com/models/edc9abda7830426d942aa2c075270e69/embed?autostart=1&camera=0&transparent=1">
+              </iframe> </div>
+
+            <!-- <form class="modal__form">
+              <div class="modal-product">
+                <div class="modal-product__info">
+                  <ul>
+                    <li>
+                      <span class="circle">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <circle opacity="0.1" cx="10" cy="10" r="10" fill="#AA9F8E" />
+                          <rect opacity="0.5" x="6.2" y="9.8001" width="7.6" height="0.4" rx="0.2" fill="#AA9F8E"
+                            stroke="#AA9F8E" stroke-width="0.4" />
+                          <rect opacity="0.5" x="10.1984" y="6.2" width="7.6" height="0.4" rx="0.2"
+                            transform="rotate(90 10.1984 6.2)" fill="#AA9F8E" stroke="#AA9F8E" stroke-width="0.4" />
+                        </svg>
+                      </span>
+                      <span class="text">Приблизить</span>
+                    </li>
+                    <li>
+                      <span class="circle">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <circle opacity="0.1" cx="10" cy="10" r="10" fill="#AA9F8E" />
+                          <rect opacity="0.5" x="6.25" y="10.25" width="7.5" height="0.5" rx="0.25" fill="#AA9F8E"
+                            stroke="#AA9F8E" stroke-width="0.5" />
+                        </svg>
+                      </span>
+                      <span class="text">Отдалить</span>
+                    </li>
+                    <li>
+                      <span class="circle">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <circle opacity="0.1" cx="10" cy="10" r="10" fill="#AA9F8E" />
+                          <g opacity="0.5">
+                            <path d="M6.5 8L4.5 10L6.5 12" stroke="#AA9F8E" />
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.5 15L9.5 5L10.5 5L10.5 15L9.5 15Z"
+                              fill="#AA9F8E" />
+                            <path d="M13.5 8L15.5 10L13.5 12" stroke="#AA9F8E" />
+                          </g>
+                        </svg>
+
+                      </span>
+                      <span class="text">Вращать на 360*</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="modal-product__picture" style="background-image: url(img/pic-moda-product.png);">
+                  <button class="modal-product__change">
+                    <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5.5 6L1.5 10L5.5 14" stroke="#AA9F8E" stroke-width="2" />
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M11.5 20L11.5 -4.37112e-08L12.5 0L12.5 20L11.5 20Z" fill="#AA9F8E" />
+                      <path d="M18.5 6L22.5 10L18.5 14" stroke="#AA9F8E" stroke-width="2" />
+                    </svg>
+                  </button>
+                </div>
+                <div class="modal-product__controls">
+                  <button class="plus">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect x="0.5" y="7.5" width="15" height="1" rx="0.5" fill="#AA9F8E" stroke="#AA9F8E" />
+                      <rect x="8.5" y="0.5" width="15" height="1" rx="0.5" transform="rotate(90 8.5 0.5)" fill="#AA9F8E"
+                        stroke="#AA9F8E" />
+                    </svg>
+                  </button>
+                  <button class="minus">
+                    <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 0H30C46.5685 0 60 13.4315 60 30C60 46.5685 46.5685 60 30 60H0V0Z" fill="white" />
+                      <rect x="22.5" y="29.5" width="15" height="1" rx="0.5" fill="#AA9F8E" stroke="#AA9F8E" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </form> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/jquery-3.6.4.min.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/jquery.selectric.min.js"></script>
+  <script src="js/micromodal.min.js"></script>
+  <script src="js/jquery.tabslet.min.js"></script>
+  <script src="js/fancybox.umd.js"></script>
+  <script src="js/jquery.inputmask.min.js"></script>
+  <script src="js/gsap.min.js"></script>
+  <script src="js/ScrollTrigger.min.js"></script>
+  <script src="js/ScrollSmoother.min.js"></script>
+  <script src="js/jquery.spincrement.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.zoom.min.js"></script>
+
+  <script type="text/javascript" src="https://static.sketchfab.com/api/sketchfab-viewer-1.12.1.js"></script>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
