@@ -91,6 +91,19 @@ $(document).ready(function () {
         el: ".typeFood__slider__pagination",
         type: "progressbar",
       },
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+          slidesPerGroup: 1,
+          effect: "flip",
+          speed:600,
+        },
+        1024: {
+          slidesPerView: 1,
+          slidesPerGroup: 1,
+          effect: "cards",
+        },
+      },
     });
   }
 
@@ -709,7 +722,7 @@ $(document).ready(function () {
 
         $(this).zoom({
           url: url,
-          magnify: 1.2
+          magnify: 1.2,
           // callback: function () {
           //   // $(this).colorbox({ href: this.src });
           // },
@@ -1225,6 +1238,12 @@ $(document).ready(function () {
 
     if ($("#lottie-3").length > 0) {
       let number = 10300;
+      let scrollStop = 12700;
+
+      if ($(window).width() < 1500) {
+        number = 9400;
+        scrollStop = 11800;
+      }
 
       let theWindow = $(window);
       let winHeight = theWindow.height();
@@ -1246,14 +1265,8 @@ $(document).ready(function () {
         animObject.goToAndStop(frame, true);
       }
 
-      anim.addEventListener("enterFrame", function (animation) {
-        // if (animation.currentTime > anim.totalFrames - 1) {
-        //   anim.pause();
-        // }
-      });
-
       $(window).scroll(function () {
-        if ($(this).scrollTop() > number && currentScroll < "12700") {
+        if ($(this).scrollTop() > number && currentScroll < scrollStop) {
           animatebodymovin(animDuration, anim);
         }
 
@@ -1357,7 +1370,6 @@ $(document).ready(function () {
               },
             }
           );
-          
 
           // delivery
 
