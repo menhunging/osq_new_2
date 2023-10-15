@@ -13345,7 +13345,7 @@ div::-webkit-scrollbar-thumb {
 
 .search-invis .btn-close-search svg {
   pointer-events: none;
-}
+} 
 
 .btn-mobile-visible {
   display: none;
@@ -13384,6 +13384,10 @@ div::-webkit-scrollbar-thumb {
 
 .blog-item__link{
   min-height: 96px;
+}
+
+.reviews-section{
+  padding-bottom: 60px;
 }
 
 @media (max-width: 1619px) {
