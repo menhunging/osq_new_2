@@ -11799,6 +11799,11 @@ div::-webkit-scrollbar-thumb {
 
 .typeFood-section {
   overflow: hidden;
+  margin-bottom: 90px;
+}
+
+#types_products .product-other{
+  padding-top: 0;
 }
 
 .news-item--big .news-item__content p {
@@ -17060,6 +17065,10 @@ div::-webkit-scrollbar-thumb {
     padding: 50px 0;
   }
 
+  .typeFood-section{
+    margin-bottom: 50px;
+  }
+
   .search-result__not {
     font-size: 16px;
     line-height: 20px;
@@ -18071,7 +18080,7 @@ div::-webkit-scrollbar-thumb {
   .grettings__slide {
     height: auto;
     max-height: 50vh;
-    padding: 140.625% 15px 15px;
+    padding: 130.6% 15px 15px;
   }
 
   .video-block .text-video {
@@ -18879,6 +18888,10 @@ div::-webkit-scrollbar-thumb {
 
   .product-other {
     padding: 30px 0;
+  }
+  
+  .typeFood-section{
+    margin-bottom: 30px;
   }
 
   .search-section .product-list {
