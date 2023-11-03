@@ -57,10 +57,10 @@ $(document).ready(function () {
       loop: true,
       effect: "cards",
       speed: 1000,
-      autoplay: {
-        delay: 4000,
-        disableOnInteraction: false,
-      },
+      // autoplay: {
+      //   delay: 4000,
+      //   disableOnInteraction: false,
+      // },
       navigation: {
         nextEl: ".grettings .swiper-button-next",
         prevEl: ".grettings .swiper-button-prev",
